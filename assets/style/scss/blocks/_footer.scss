@@ -1,0 +1,11 @@
+$bgFooter: #394C7D;
+
+.footer {
+    padding-top: 5%;
+    background: $bgFooter;
+    min-height: 250px;
+    
+    .footer-information__link {
+        color: white;
+    }
+}
