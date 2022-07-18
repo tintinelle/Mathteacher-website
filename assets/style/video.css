@@ -1,0 +1,57 @@
+body {
+    max-width: 80vw;
+    font-size: 16px;
+    margin: auto;
+}
+
+main {
+    max-width: 90%;
+
+    background-color: #C4EBDF;
+}
+
+.video-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    max-width: 930px;
+    min-height: 250px;
+
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+
+    background-color: #FFFFFF;
+}
+
+.video-card,
+.card {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 200px;
+    /* max-height: 250px; */
+
+    margin-right: 0.7rem;
+    text-align: center;
+}
+
+.btn__link {
+    align-self: center;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 1rem;
+    padding: 0.55em 1.3em;
+
+    text-decoration: none;
+    text-align: center;
+
+    border: none;
+    border-radius: 0.5em;
+    background-color: #394C7D;
+    color: white;
+}
+
+.btn-primary_sp {
+    background-color: #394C7D;
+}
