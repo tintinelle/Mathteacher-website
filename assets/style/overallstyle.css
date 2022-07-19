@@ -73,6 +73,15 @@ main {
   border: none;
 }
 
+/*education block*/
+.education-block {
+  margin-top: 2rem;
+}
+
+.education-title {
+  margin-left: 4rem;
+}
+
 .main__background {
   background-color: #F1F1F1;
   margin: 0 2% 0 2%;
