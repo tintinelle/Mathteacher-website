@@ -1,4 +1,40 @@
 .header {
-    display: flex;
-    justify-content: space-around;
+    // display: flex;
+    // justify-content: space-around;
+    // align-items: center;
+
+    display: grid;
+    grid-template-columns: 10% 1fr 40% 20%;
+    align-items: center;
+
+    min-height: 6rem;
+
+    background-color: $main-bg-color;
+
+    &__nav {
+        justify-self: end;
+    }
+}
+
+.header {
+
+    // .header__logo
+
+    &__logo {
+    }
+
+    // .header__title
+
+    &__title {
+    }
+
+    // .header__nav
+
+    &__nav {
+    }
+
+    // .header__button
+
+    &__button {
+    }
 }

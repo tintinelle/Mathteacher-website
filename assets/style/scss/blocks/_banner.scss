@@ -1,7 +1,33 @@
+*{
+    border: 1px solid sienna;
+}
+@mixin pad_banner {
+    padding: 0 20% 0 20%;
+}
 .main {
+    &__banner {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30% 25% 45%;
+    }
 
     &__photo {
-        width: 30%;
+        grid-area: 1/1/4/2;
+        width: 100%;
+    }
+
+    &__title {
+        align-self: end;
+        @include pad_banner();
+    }
+    
+    &__text {
+        align-self: center;
+        @include pad_banner();
+    }
+
+    &__button {
+        @include pad_banner();
     }
 
 }
