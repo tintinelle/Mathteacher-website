@@ -4,8 +4,7 @@
     align-items: center;
 
     min-height: 6rem;
-
-    background-color: $main-bg-color;
+    padding: 0 6%;
 
     &__nav {
         justify-self: end;
@@ -22,15 +21,23 @@
     // .header__title
 
     &__title {
+        font-family: $italic-font;
+        font-style: italic;
     }
 
     // .header__nav
 
     &__nav {
+        font-family: $main-font;
+
+        a {
+            text-decoration: none;
+        }
     }
 
     // .header__button
 
     &__button {
+        font-family: $main-font;
     }
 }
