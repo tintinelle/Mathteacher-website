@@ -1,23 +1,24 @@
-//colors
-
-/*$main-bg-color: #F1F1F1;
-$block-bg-color: #FFF;
-$footer-bg-color: #394C7D;
-
-$about-btn-color:#FF9CB4;
-$nav-btn-color:#394C7D;
-$mail-btn-color: #E7ACAA;
-
-$sb-bg-color:#C4EBDF;*/
-
-
 /*video block*/
 .video-block {
-    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1200px;
+    max-height: 600px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: $block-bg-color;
+
+    border: none;
+    border-radius: 1em;
+    box-shadow: 4px 4px 16px rgba(78, 55, 55, 0.37),
+        inset 0px 4px 16px rgba(255, 255, 255, 0.503);
 }
 
 .video-title {
-    margin: auto;
+    margin: 0.5rem auto;
 }
 
 .video-container {
@@ -26,21 +27,7 @@ $sb-bg-color:#C4EBDF;*/
     justify-content: space-around;
     align-items: center;
 
-    max-width: 1200px;
-    max-height: 560px;
-
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-
     overflow-y: scroll;
-    background-color: $block-bg-color;
-
-    border: none;
-    border-radius: 1em;
-    box-shadow: 4px 4px 16px rgba(78, 55, 55, 0.37),
-        inset 0px 4px 16px rgba(255, 255, 255, 0.503);
 }
 
 .video-container::-webkit-scrollbar {
@@ -79,7 +66,7 @@ $sb-bg-color:#C4EBDF;*/
 }
 
 .education-title {
-    margin: auto;
+    margin: 1rem auto;
 }
 
 .education-container {
