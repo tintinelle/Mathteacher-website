@@ -1,0 +1,70 @@
+body {
+    max-width: 80vw;
+    font-size: 16px;
+    margin: auto;
+}
+
+main {
+    max-width: 90%;
+    margin: auto;
+    background-color: $main-bg-color;
+}
+
+/*video block*/
+.video-block {
+    margin-top: 2rem;
+}
+
+.video-title {
+    margin-left: 4rem;
+}
+
+.video-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+    max-width: 930px;
+    max-height: 600px;
+
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+
+    overflow-y: scroll;
+    background-color: $block-bg-color;
+
+    border: none;
+    border-radius: 1em;
+}
+
+.video-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    max-width: 200px;
+    min-width: 200px;
+
+    min-height: 250px;
+
+    margin: 0.7rem;
+    text-align: center;
+}
+
+.card-img-top {
+    object-fit: cover;
+    max-height: 260px;
+}
+
+.card-body {
+    min-height: 200px;
+    padding: 1rem;
+}
+
+.btn-primary_sp {
+    margin: 1em;
+    background-color: $nav-btn-color;
+    border: none;
+}
