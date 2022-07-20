@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&family=Rubik:wght@300;400;600&display=swap");
+.footer__titile {
+  font-family: "Rubik", serif;
+  font-weight: 400;
+}
+
+.footer__content {
+  font-family: "Rubik", serif;
+  font-weight: 300;
+}
+
 .header {
   display: grid;
   grid-template-columns: 10% 1fr 40% 20%;
@@ -86,7 +97,6 @@
   margin: 1em;
   background-color: #394C7D;
   border: none;
-}/*# sourceMappingURL=overallstyle.css.map */
 }
 
 /*education block*/
@@ -97,3 +107,29 @@
 .education-title {
   margin-left: 4rem;
 }
+
+.footer {
+  padding-top: 5%;
+  background: #394C7D;
+  min-height: 250px;
+}
+.footer .footer-information__link {
+  color: white;
+}
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 10%;
+  }
+  .footer .footer__titile {
+    text-align: center;
+  }
+  .footer .footer__content {
+    text-align: center;
+  }
+  .footer .footer-information__link {
+    text-align: center;
+  }
+  .footer .footer__menu {
+    text-align: center;
+  }
+}/*# sourceMappingURL=overallstyle.css.map */
