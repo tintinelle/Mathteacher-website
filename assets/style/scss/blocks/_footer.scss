@@ -8,6 +8,25 @@
         color: white;
     }
 
+    a:hover {
+        color: rgb(147, 144, 144);
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .footer__titile {
+            text-align: center;
+        }
+
+        .footer__content {
+            text-align: center;
+        }
+
+        .footer-information__link {
+            text-align: center;
+        }
+    }
+
+
     @media screen and (max-width:767px) {
         padding: 10%;
         .footer__titile {
