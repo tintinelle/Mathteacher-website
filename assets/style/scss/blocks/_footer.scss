@@ -5,11 +5,23 @@
     min-height: 250px;
     
     .footer-information__link {
-        color: white;
+        color: $footer-information__link;
     }
 
     a:hover {
-        color: rgb(147, 144, 144);
+        color: $footer-information__link_hover;
+    }
+
+    .footer__menu-link {
+        color:$footer__menu-link;
+    }
+
+    .footer__menu-link:hover {
+        color: $footer__menu-link_hover;
+    }
+
+    .footer__menu-link:visited {
+        color: $footer__menu-link_visited;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1023px) {
