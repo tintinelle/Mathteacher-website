@@ -1,0 +1,27 @@
+$bgFooter: #394C7D;
+
+.footer {
+    padding-top: 5%;
+    background: $bgFooter;
+    min-height: 250px;
+    
+    .footer-information__link {
+        color: white;
+    }
+
+    @media screen and (max-width:767px) {
+        padding: 10%;
+        .footer__titile {
+            text-align: center;
+        }
+        .footer__content{
+            text-align: center;
+        }
+        .footer-information__link {
+            text-align: center;
+        }
+        .footer__menu {
+            text-align: center;
+        }
+    }
+}

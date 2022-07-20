@@ -87,3 +87,13 @@
   background-color: #394C7D;
   border: none;
 }/*# sourceMappingURL=overallstyle.css.map */
+}
+
+/*education block*/
+.education-block {
+  margin-top: 2rem;
+}
+
+.education-title {
+  margin-left: 4rem;
+}
