@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik&display=swap');
+
+//Основной шрифт - rubik-400
+$main-font: 'Rubik', sans-serif;
+
+$title-font: 'Raleway', sans-serif;
+
+$italic-font: 'Roboto', sans-serif;
+
+
+//шрифт для заголовка в футере
+.footer__titile {
+    font-family: $main-font;
+    font-weight: 400;
+}
+
+//шрифт для текста в футере (кроме заголовка)
+.footer__content {
+    font-family: $main-font;
+    font-weight: 300;
+}
+
+// Ильвина шрифты
