@@ -198,11 +198,34 @@
 
 .footer {
   padding-top: 5%;
-  background: #394C7D;
+  background: #5EC6C7;
   min-height: 250px;
 }
 .footer .footer-information__link {
   color: white;
+}
+.footer a:hover {
+  color: rgb(147, 144, 144);
+}
+.footer .footer__menu-link {
+  color: rgb(234, 239, 242);
+}
+.footer .footer__menu-link:hover {
+  color: rgb(91, 139, 182);
+}
+.footer .footer__menu-link:visited {
+  color: #d1eef4;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer .footer__titile {
+    text-align: center;
+  }
+  .footer .footer__content {
+    text-align: center;
+  }
+  .footer .footer-information__link {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 767px) {
   .footer {
