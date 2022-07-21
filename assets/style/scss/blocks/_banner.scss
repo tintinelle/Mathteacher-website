@@ -11,17 +11,17 @@
     }
 
     &__photo {
-        grid-area: 1/1/4/2;
         justify-self: end;
 
         width: 80%;
         border-radius: 30px;
     }
 
-    &__title {
-        align-self: end;
-        padding: 0 15%;
+    &__text {
+        padding: 10% 15%;
+    }
 
+    &__title {
         font-family: $title-font;
         font-weight: 500;
         line-height: 150%;
@@ -35,20 +35,17 @@
         }
     }
     
-    &__text {
-        align-self: center;
-        padding: 0 15%;
-
+    &__slogan {
+        margin: 5% auto 12% auto;
         font-family: $main-font;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
 
         color: $text-color;
     }
 
     &__button {
-        padding: 0 15%;
-
         font-family: $main-font;
+        font-size: 1.2rem;
 
         &_about {
             padding: 1.5% 8%;
@@ -68,12 +65,24 @@
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     .main {
+        &__text {
+            padding: 10%;
+        }
+    
 		&__photo {
             width: 100%;
 		}
 
 		&__title {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        &__slogan {
+            font-size: 1rem;
+        }
+
+        &__button {
+            font-size: 1rem;
         }
 }
 }
@@ -85,13 +94,11 @@
 
 		&__banner {
             display: flex;
-            flex-flow: column wrap;
-
+            margin-top: 3%;
             background-image: url(../img/photo_banner.jpg);
             background-size: 100%;
             background-repeat: no-repeat;
-            background-position: center;
-            min-height: 80vh;
+            min-height: 75vh;
 		}
 
 		// .main__photo
@@ -100,34 +107,44 @@
             display: none;
 		}
 
+        &__text {
+            background-color: #E6E6FA95;
+            // background-color: #2F4F4F80;
+            border-radius: 15px;
+            margin-top: 70%;
+            padding: 4%;
+            text-align: center;
+        }
+
 		// .main__title
 
 		&__title {
             font-size: 1.2rem;
-            background-color: #E6E6FA90;
+            // background-color: #E6E6FA90;
             color: darken($text-color, $amount: 10%);
-            margin: 85% auto 0 auto;
+            // margin: 89% auto 0 auto;
 
             &_vivid {
-                background-color: #E6E6FA00;
+                // background-color: #E6E6FA00;
                 color: darken($vivid-warm-color, $amount: 10%);
             }
 		}
 
 		// .main__text
 
-		&__text {
+		&__slogan {
             font-size: 0.8rem;
-            background-color: #E6E6FA90;
+            // background-color: #E6E6FA90;
             color: darken($text-color, $amount: 10%);
-            margin: 0 auto;
+            // margin: 0 auto;
+            margin: 5%;
             
 		}
 
 		// .main__button
 
 		&__button {
-            background-color: #E6E6FA90;
+            // background-color: #E6E6FA90;
             
 
 			// .main__button_about

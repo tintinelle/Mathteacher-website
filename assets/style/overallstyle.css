@@ -65,14 +65,14 @@
   margin-bottom: 5%;
 }
 .main__photo {
-  grid-area: 1/1/4/2;
   justify-self: end;
   width: 80%;
   border-radius: 30px;
 }
+.main__text {
+  padding: 10% 15%;
+}
 .main__title {
-  align-self: end;
-  padding: 0 15%;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   line-height: 150%;
@@ -83,16 +83,15 @@
   color: #FF4F55;
   padding: 0;
 }
-.main__text {
-  align-self: center;
-  padding: 0 15%;
+.main__slogan {
+  margin: 5% auto 12% auto;
   font-family: "Rubik", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: #5E5E5E;
 }
 .main__button {
-  padding: 0 15%;
   font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
 }
 .main__button_about {
   padding: 1.5% 8%;
@@ -107,44 +106,52 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+  .main__text {
+    padding: 10%;
+  }
   .main__photo {
     width: 100%;
   }
   .main__title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .main__slogan {
+    font-size: 1rem;
+  }
+  .main__button {
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 767px) {
   .main__banner {
     display: flex;
-    flex-flow: column wrap;
+    margin-top: 3%;
     background-image: url(../img/photo_banner.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: center;
-    min-height: 80vh;
+    min-height: 75vh;
   }
   .main__photo {
     display: none;
   }
+  .main__text {
+    background-color: rgba(230, 230, 250, 0.5843137255);
+    border-radius: 15px;
+    margin-top: 70%;
+    padding: 4%;
+    text-align: center;
+  }
   .main__title {
     font-size: 1.2rem;
-    background-color: rgba(230, 230, 250, 0.5647058824);
     color: #454545;
-    margin: 85% auto 0 auto;
   }
   .main__title_vivid {
-    background-color: rgba(230, 230, 250, 0);
     color: #ff1c24;
   }
-  .main__text {
+  .main__slogan {
     font-size: 0.8rem;
-    background-color: rgba(230, 230, 250, 0.5647058824);
     color: #454545;
-    margin: 0 auto;
-  }
-  .main__button {
-    background-color: rgba(230, 230, 250, 0.5647058824);
+    margin: 5%;
   }
 }
 /*video block*/
@@ -278,11 +285,34 @@
 
 .footer {
   padding-top: 5%;
-  background: #394C7D;
+  background: #5EC6C7;
   min-height: 250px;
 }
 .footer .footer-information__link {
   color: white;
+}
+.footer a:hover {
+  color: rgb(147, 144, 144);
+}
+.footer .footer__menu-link {
+  color: rgb(234, 239, 242);
+}
+.footer .footer__menu-link:hover {
+  color: rgb(91, 139, 182);
+}
+.footer .footer__menu-link:visited {
+  color: #d1eef4;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer .footer__titile {
+    text-align: center;
+  }
+  .footer .footer__content {
+    text-align: center;
+  }
+  .footer .footer-information__link {
+    text-align: center;
+  }
 }
 @media screen and (max-width: 767px) {
   .footer {
