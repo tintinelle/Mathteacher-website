@@ -1,7 +1,54 @@
+// *{
+//     border: 1px solid sienna;
+// }
+
+@mixin pad_banner {
+    padding: 0 15% 0 15%;
+}
 .main {
+    &__banner {
+    display: grid;
+    grid-template-columns: 40% 60%;
+
+    padding: 0 6%;
+
+    }
 
     &__photo {
-        width: 30%;
+        grid-area: 1/1/4/2;
+        justify-self: end;
+        width: 80%;
+        border-radius: 30px;
+    }
+
+    &__title {
+        align-self: end;
+        @include pad_banner();
+
+        font-family: $title-font;
+        font-weight: 500;
+
+        color: #5E5E5E;
+
+        &_vivid {
+            color: $vivid-warm-color;
+            padding: 0;
+        }
+    }
+    
+    &__text {
+        align-self: center;
+        @include pad_banner();
+
+        font-family: $main-font;
+
+        color: #5E5E5E;
+    }
+
+    &__button {
+        @include pad_banner();
+
+        font-family: $main-font;
     }
 
 }
