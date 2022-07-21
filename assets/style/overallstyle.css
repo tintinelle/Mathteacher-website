@@ -11,33 +11,46 @@
 
 .header {
   display: grid;
-  grid-template-columns: 10% 1fr 40% 20%;
+  grid-template-columns: 10% 1fr 60%;
   align-items: center;
   min-height: 6rem;
   padding: 0 6%;
 }
+.header__title {
+  font-family: "Rubik", sans-serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: #5E5E5E;
+}
 .header__nav {
   justify-self: end;
-}
-
-.header__title {
-  font-family: "Roboto", sans-serif;
-  font-style: italic;
-}
-.header__nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
   font-family: "Rubik", sans-serif;
 }
 .header__nav a {
   text-decoration: none;
+  padding: 0.5% 2%;
+  border-radius: 10px;
+  background-color: #5EC6C7;
+  color: white;
 }
-.header__button {
-  font-family: "Rubik", sans-serif;
+.header__nav a:last-child {
+  background-color: #FF9190;
+}
+.header__nav a:hover {
+  background-color: #4EB6B7;
+}
+.header__nav a:hover:last-child {
+  background-color: #FF4F55;
 }
 
 .main__banner {
   display: grid;
   grid-template-columns: 40% 60%;
   padding: 0 6%;
+  margin-bottom: 5%;
 }
 .main__photo {
   grid-area: 1/1/4/2;
@@ -50,6 +63,8 @@
   padding: 0 15% 0 15%;
   font-family: "Raleway", sans-serif;
   font-weight: 500;
+  line-height: 150%;
+  font-size: 2.2rem;
   color: #5E5E5E;
 }
 .main__title_vivid {
@@ -60,11 +75,23 @@
   align-self: center;
   padding: 0 15% 0 15%;
   font-family: "Rubik", sans-serif;
+  font-size: 1.1rem;
   color: #5E5E5E;
 }
 .main__button {
   padding: 0 15% 0 15%;
   font-family: "Rubik", sans-serif;
+}
+.main__button_about {
+  padding: 1.5% 8%;
+  border-radius: 10px;
+  border: none;
+  background-color: #FF9190;
+  color: white;
+}
+.main__button_about:hover {
+  padding: 1.5% 10%;
+  background-color: #FF4F55;
 }
 
 /*video block*/
