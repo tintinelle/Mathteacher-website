@@ -133,35 +133,3 @@
     grid-row: 2/3;
     grid-column: 3/4;
 }
-
-.edu-card_slide-left {
-    animation: slide-in-left 1s cubic-bezier(.25, .46, .45, .94) both
-}
-
-@keyframes slide-in-left {
-    0% {
-        transform: translateX(-1000px);
-        opacity: 0
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1
-    }
-}
-
-.edu-card_slide-right {
-    animation: slide-in-right 1s cubic-bezier(.25, .46, .45, .94) both
-}
-
-@keyframes slide-in-right {
-    0% {
-        transform: translateX(1000px);
-        opacity: 0
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1
-    }
-}
