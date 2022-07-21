@@ -1,4 +1,43 @@
 .header {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 10% 1fr 40% 20%;
+    align-items: center;
+
+    min-height: 6rem;
+    padding: 0 6%;
+
+    &__nav {
+        justify-self: end;
+    }
+}
+
+.header {
+
+    // .header__logo
+
+    &__logo {
+    }
+
+    // .header__title
+
+    &__title {
+        font-family: $italic-font;
+        font-style: italic;
+    }
+
+    // .header__nav
+
+    &__nav {
+        font-family: $main-font;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    // .header__button
+
+    &__button {
+        font-family: $main-font;
+    }
 }
