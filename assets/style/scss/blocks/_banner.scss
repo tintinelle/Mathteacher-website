@@ -1,22 +1,18 @@
-*{
-    border: 1px solid sienna;
-}
-
-@mixin pad_banner {
-    padding: 0 15% 0 15%;
-}
+// *{
+//     border: 1px solid sienna;
+// }
 .main {
     &__banner {
     display: grid;
     grid-template-columns: 40% 60%;
 
     padding: 0 6%;
-
     }
 
     &__photo {
         grid-area: 1/1/4/2;
         justify-self: end;
+
         width: 80%;
         border-radius: 30px;
     }
@@ -52,7 +48,19 @@
         @include pad_banner();
 
         font-family: $main-font;
+
+        &_about {
+            padding: 1.5% 8%;
+            border-radius: 10px;
+            border: none;
+
+            background-color: $pastel-warm-color;
+            color: white;
+
+            &:hover {
+                padding: 1.5% 10% ;
+                background-color: $vivid-warm-color;
+            }
+        }
     }
-
 }
-
