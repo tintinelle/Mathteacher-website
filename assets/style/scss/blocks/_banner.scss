@@ -20,7 +20,7 @@
 
     &__title {
         align-self: end;
-        @include pad_banner();
+        padding: 0 15%;
 
         font-family: $title-font;
         font-weight: 500;
@@ -37,7 +37,7 @@
     
     &__text {
         align-self: center;
-        @include pad_banner();
+        padding: 0 15%;
 
         font-family: $main-font;
         font-size: 1.1rem;
@@ -46,7 +46,7 @@
     }
 
     &__button {
-        @include pad_banner();
+        padding: 0 15%;
 
         font-family: $main-font;
 
@@ -64,4 +64,77 @@
             }
         }
     }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .main {
+		&__photo {
+            width: 100%;
+		}
+
+		&__title {
+            font-size: 1.5rem;
+        }
+}
+}
+
+@media screen and (max-width:767px) {
+    .main {
+
+		// .main__banner
+
+		&__banner {
+            display: flex;
+            flex-flow: column wrap;
+
+            background-image: url(../img/photo_banner.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+            min-height: 80vh;
+		}
+
+		// .main__photo
+
+		&__photo {
+            display: none;
+		}
+
+		// .main__title
+
+		&__title {
+            font-size: 1.2rem;
+            background-color: #E6E6FA90;
+            color: darken($text-color, $amount: 10%);
+            margin: 85% auto 0 auto;
+
+            &_vivid {
+                background-color: #E6E6FA00;
+                color: darken($vivid-warm-color, $amount: 10%);
+            }
+		}
+
+		// .main__text
+
+		&__text {
+            font-size: 0.8rem;
+            background-color: #E6E6FA90;
+            color: darken($text-color, $amount: 10%);
+            margin: 0 auto;
+            
+		}
+
+		// .main__button
+
+		&__button {
+            background-color: #E6E6FA90;
+            
+
+			// .main__button_about
+
+			&_about {
+			}
+		}
+}
+
 }
