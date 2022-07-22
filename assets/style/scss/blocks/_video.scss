@@ -96,7 +96,8 @@
     flex-direction: column;
 
     max-width: 1200px;
-    max-height: 570px;
+    /* max-height: 570px; */
+    min-height: fit-content;
 
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -113,9 +114,9 @@
 .edu-card {
     display: grid;
     grid-template-columns: 1fr 2fr 3fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 1fr;
 
-    max-height: 120px;
+    /*  max-height: 120px; */
     margin: 0.7rem 2rem;
 }
 
@@ -124,7 +125,7 @@
     grid-column: 1/2;
     justify-self: center;
     align-self: center;
-    object-position: center;
+
     max-height: 120px;
     border-radius: 50%;
 }
@@ -144,30 +145,7 @@
     grid-column: 3/4;
 }
 
-/* @media screen and (min-width: 768px) and (max-width: 1023px) {
-       .education-container {
-        max-width: 1200px;
-        max-height: 570px;
-
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-        margin-left: auto;
-        margin-right: auto;
-
-    }
-
-    .edu-card {
-        max-height: 120px;
-        margin: 0.7rem 2rem;
-    }
-
-    .edu-card__img {
-        max-height: 120px;
-    }
-
-} */
-
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .video-block {
         /* min-width: 90vw; */
         max-height: 400px;
@@ -195,7 +173,6 @@
 
     .card_test {
         min-height: fit-content;
-        /*  max-height: 100px; */
     }
 
     .card-text,
@@ -204,5 +181,96 @@
         display: none;
     }
 
+    .education-container {
+        min-height: fit-content;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
 
+    }
+
+    .edu-card__img {
+        max-height: 100px;
+        /* min-height:fit-content; */
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .video-block {
+        /* min-width: 90vw; */
+        max-height: 400px;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card {
+        max-width: 150px;
+
+        margin: 0.7rem;
+    }
+
+    .card,
+    .card-img-top,
+    .card-body {
+        max-width: 150px;
+    }
+
+    .card-body {
+        min-height: fit-content;
+        max-height: 300px;
+    }
+
+    .card_test {
+        min-height: fit-content;
+    }
+
+    .card-text,
+    .btn-primary,
+    .card-title_exam {
+        display: none;
+    }
+
+    .education-container {
+        min-height: fit-content;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .edu-card {
+        margin: 0.7rem 2rem;
+    }
+
+    .edu-card__prof {
+        font-size: 0.7em;
+    }
+
+    .edu-card__img {
+        display: none;
+    }
+
+    .edu-card__univers {
+        grid-row: 1/2;
+        grid-column: 2/4;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .edu-card__years {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .edu-card__prof {
+        grid-row: 2/3;
+        grid-column: 1/4;
+        text-align: left;
+    }
 }
