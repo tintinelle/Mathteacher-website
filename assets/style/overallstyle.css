@@ -331,4 +331,38 @@
   .footer .footer__menu {
     text-align: center;
   }
+}
+
+.about__img {
+  width: 90%;
+  grid-column: 2/3;
+}
+
+.about__title {
+  text-align: center;
+  margin: 5%;
+}
+
+.about__container {
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 10%;
+}
+
+.about__text {
+  grid-column: 3/4;
+}
+
+.about__list {
+  font-size: 1.5rem;
+  list-style-position: outside;
+  list-style-image: url(../img/square_about.png);
+}
+
+.about__title_teacher {
+  margin-left: 5%;
+  color: #FF9CB4;
+}
+
+.about__list_li {
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=overallstyle.css.map */
