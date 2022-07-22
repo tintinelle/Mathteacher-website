@@ -140,7 +140,7 @@
 
 .card-body {
   min-height: 200px;
-  padding: 1rem;
+  padding: 1rem 1rem 0;
 }
 
 .card-body_test {
@@ -160,7 +160,7 @@
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #FF4F55;
   --bs-btn-hover-border-color: #FF4F55;
-  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
   --bs-btn-active-color: #fff;
   --bs-btn-active-bg: #FF4F55;
   --bs-btn-active-border-color: #FF4F55;
@@ -228,6 +228,62 @@
   grid-column: 3/4;
 }
 
+/* @media screen and (min-width: 768px) and (max-width: 1023px) {
+       .education-container {
+        max-width: 1200px;
+        max-height: 570px;
+
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .edu-card {
+        max-height: 120px;
+        margin: 0.7rem 2rem;
+    }
+
+    .edu-card__img {
+        max-height: 120px;
+    }
+
+} */
+@media screen and (max-width: 767px) {
+  .video-block {
+    /* min-width: 90vw; */
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card {
+    max-width: 150px;
+    margin: 0.7rem;
+  }
+  .card,
+.card-img-top,
+.card-body {
+    max-width: 150px;
+  }
+  .card-body {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    max-height: 300px;
+  }
+  .card_test {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    /*  max-height: 100px; */
+  }
+  .card-text,
+.btn-primary,
+.card-title_exam {
+    display: none;
+  }
+}
 .footer {
   padding-top: 5%;
   background: #5EC6C7;
