@@ -37,7 +37,7 @@
 
 .card {
     max-width: 200px;
-    min-width: 200px;
+    min-width: 100px;
 
     min-height: 250px;
 
@@ -47,11 +47,15 @@
 
 .card-img-top {
     object-fit: cover;
-    max-height: 260px;
+    max-height: 250px;
 }
 
 .card-body {
     min-height: 200px;
+    padding: 1rem;
+}
+.card-body_test{
+    min-height: 80px;
     padding: 1rem;
 }
 
