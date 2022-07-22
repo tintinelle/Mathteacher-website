@@ -1,4 +1,48 @@
 .header {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 10% 1fr 60%;
+    align-items: center;
+
+    min-height: 6rem;
+    padding: 0 6%;
+
+    &__logo {
+    }
+
+    &__title {
+        font-family: $main-font;
+        font-style: italic;
+        font-size: 1.2rem;
+
+        color: $text-color;
+    }
+
+    &__nav {
+        justify-self: end;
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+
+        font-family: $main-font;
+
+        a {
+            text-decoration: none;
+            padding: 0.5% 2%;
+            border-radius: 10px;
+
+            background-color: $pastel-cold-color;
+            color: white;
+
+            &:last-child {
+                background-color: $pastel-warm-color;
+            }
+
+            &:hover {
+                background-color: $vivid-cold-color;
+                &:last-child {
+                    background-color: $vivid-warm-color;
+                }
+            }
+        }
+    }
 }

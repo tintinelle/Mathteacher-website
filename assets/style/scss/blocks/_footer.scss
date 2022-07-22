@@ -2,24 +2,58 @@ $bgFooter: #394C7D;
 
 .footer {
     padding-top: 5%;
-    background: $bgFooter;
+    background: $footer-bg-color;
     min-height: 250px;
-    
+
     .footer-information__link {
-        color: white;
+        color: $footer-information__link;
+    }
+
+    a:hover {
+        color: $footer-information__link_hover;
+    }
+
+    .footer__menu-link {
+        color: $footer__menu-link;
+    }
+
+    .footer__menu-link:hover {
+        color: $footer__menu-link_hover;
+    }
+
+    .footer__menu-link:visited {
+        color: $footer__menu-link_visited;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+        .footer__titile {
+            text-align: center;
+        }
+
+        .footer__content {
+            text-align: center;
+        }
+
+        .footer-information__link {
+            text-align: center;
+        }
     }
 
     @media screen and (max-width:767px) {
         padding: 10%;
+
         .footer__titile {
             text-align: center;
         }
-        .footer__content{
+
+        .footer__content {
             text-align: center;
         }
+
         .footer-information__link {
             text-align: center;
         }
+
         .footer__menu {
             text-align: center;
         }

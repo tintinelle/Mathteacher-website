@@ -1,8 +1,67 @@
+// *{
+//     border: 1px solid sienna;
+// }
 .main {
+    &__banner {
+    display: grid;
+    grid-template-columns: 40% 60%;
 
-    &__photo {
-        width: 30%;
+    padding: 0 6%;
+    margin-bottom: 5%;
     }
 
-}
+    &__photo {
+        grid-area: 1/1/4/2;
+        justify-self: end;
 
+        width: 80%;
+        border-radius: 30px;
+    }
+
+    &__title {
+        align-self: end;
+        @include pad_banner();
+
+        font-family: $title-font;
+        font-weight: 500;
+        line-height: 150%;
+        font-size: 2.2rem;
+
+        color: $text-color;
+
+        &_vivid {
+            color: $vivid-warm-color;
+            padding: 0;
+        }
+    }
+    
+    &__text {
+        align-self: center;
+        @include pad_banner();
+
+        font-family: $main-font;
+        font-size: 1.1rem;
+
+        color: $text-color;
+    }
+
+    &__button {
+        @include pad_banner();
+
+        font-family: $main-font;
+
+        &_about {
+            padding: 1.5% 8%;
+            border-radius: 10px;
+            border: none;
+
+            background-color: $pastel-warm-color;
+            color: white;
+
+            &:hover {
+                padding: 1.5% 10% ;
+                background-color: $vivid-warm-color;
+            }
+        }
+    }
+}
