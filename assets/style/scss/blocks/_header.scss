@@ -14,7 +14,7 @@
     &__title {
         align-self: end;
         margin-left: 0;
-        
+
         font-family: $main-font;
         font-style: italic;
         font-size: 1.5rem;
@@ -56,13 +56,38 @@
     .header {
         font-size: 0.8rem;
 
+        &__logo {
+            width: 100%;
+        }
+
         &__title {
+            align-self: center;
+            margin-left: 5%;
             width: 80%;
-            font-size: 1rem;
+            font-size: 0.9rem;
         }
 
         &__nav {
             width: 100%;
         }
     }
+}
+
+@media screen and (max-width:767px) {
+    .header {
+        grid-template-columns: 15% 1fr 60%;
+
+        &__logo {
+            width: 100%;
+        }
+
+        &__title {
+            align-self: center;
+
+            margin-left: 5%;
+
+            font-size: 1rem;
+            line-height: 100%;
+        }
+}
 }

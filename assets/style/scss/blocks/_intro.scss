@@ -21,3 +21,24 @@
         width: 50%;
     }
 }
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .main {
+        &__subtitle {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .main {
+        &__subtitle {
+            font-size: 1.4rem;
+        }
+
+        &__video {
+            margin-left: 5%;
+            width: 90%;
+        }
+    }
+}
