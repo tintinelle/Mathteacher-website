@@ -43,11 +43,9 @@
     display: grid;
     grid-area: "photo_content";
     grid-template-columns: repeat(6, 1fr);
-    /* grid-template-rows: 100px; */
     max-height: 500px;
-    /* width: 100px; */
     grid-column-gap: 20px;
-    padding: 20px;
+    padding: 100px;
     justify-content: space-around;
     justify-items: center;
     align-items: center;
@@ -57,32 +55,26 @@
 
 .about__photo_1 {
     grid-area: "about__photo_1";
-    /*  height: 100px; */
 }
 
 .about__photo_2 {
     grid-area: "about__photo_2";
-    /*  height: 100px; */
 }
 
 .about__photo_3 {
     grid-area: "about__photo_3";
-    /* height: 100px; */
 }
 
 .about__photo_4 {
     grid-area: "about__photo_4";
-    /* height: 100px; */
 }
 
 .about__photo_5 {
     grid-area: "about__photo_5";
-    /* height: 100px; */
 }
 
 .about__photo_6 {
     grid-area: "about__photo_6";
-    /* height: 100px; */
 }
 
 .about__photo_1,
@@ -91,5 +83,5 @@
 .about__photo_4,
 .about__photo_5,
 .about__photo_6 {
-    max-height: 500px;
+    max-height: 280px;
 }
