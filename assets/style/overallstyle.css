@@ -451,15 +451,6 @@
 }
 
 /*gallery*/
-.about__content {
-  display: -ms-grid;
-  display: grid;
-  width: 60%;
-  -ms-grid-columns: minmax(1rem, 1fr) minmax(auto, 1200px) minmax(1rem, 1fr);
-      grid-template-columns: minmax(1rem, 1fr) minmax(auto, 1200px) minmax(1rem, 1fr);
-      grid-template-areas: ". photo_content .";
-}
-
 .about__photo {
   display: -ms-grid;
   display: grid;
@@ -467,8 +458,8 @@
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
   max-height: 500px;
+  margin: 10% 5%;
   grid-column-gap: 20px;
-  padding: 100px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   justify-items: center;
@@ -509,5 +500,60 @@
 .about__photo_5,
 .about__photo_6 {
   max-height: 280px;
+}
+
+.about__certificates_title {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--bs-heading-color);
+}
+
+.about__certificates {
+  display: -ms-grid;
+  display: grid;
+  grid-area: "certificate_content";
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  max-height: 500px;
+  margin: 5%;
+  grid-column-gap: 3%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+      grid-template-areas: "about__certificate_1 about__certificate_2 about__certificate_3 about__certificate_4 about__certificate_5 about__certificate_6";
+}
+
+.about__certificate_1 {
+  grid-area: "about__certificate_1";
+}
+
+.about__certificate_2 {
+  grid-area: "about__certificate_2";
+}
+
+.about__certificate_3 {
+  grid-area: "about__certificate_3";
+}
+
+.about__certificate_4 {
+  grid-area: "about__certificate_4";
+}
+
+.about__certificate_5 {
+  grid-area: "about__certificate_5";
+}
+
+.about__certificate_6 {
+  grid-area: "about__certificate_6";
+}
+
+.about__certificate_1,
+.about__certificate_2,
+.about__certificate_3,
+.about__certificate_4,
+.about__certificate_5,
+.about__certificate_6 {
+  max-height: 220px;
 }
 /*# sourceMappingURL=overallstyle.css.map */
