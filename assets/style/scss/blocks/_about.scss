@@ -1,30 +1,38 @@
 .about__img {
-    width:90%;
+    width: 90%;
     grid-column: 2/3;
 }
+
 .about__title {
     text-align: center;
     margin: 5%;
 }
+
 .about__container {
     display: grid;
     grid-template-columns: 10% 1fr 1fr 10%;
 }
+
 .about__text {
     grid-column: 3/4;
 }
+
 .about__list {
     font-size: 1.5rem;
     list-style-position: outside;
-    list-style-image: url(../img/square_about.png); 
+    list-style-image: url(../img/square_about.png);
 }
+
 .about__title_teacher {
     margin-left: 5%;
     color: #FF9CB4;
 }
+
 .about__list_li {
     margin-bottom: 1rem;
 }
+
+/*gallery*/
 .about__content {
     display: grid;
     width: 60%;
@@ -35,38 +43,53 @@
     display: grid;
     grid-area: "photo_content";
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 100px;
-    height: 100px;
-    width: 100px;
+    /* grid-template-rows: 100px; */
+    max-height: 500px;
+    /* width: 100px; */
     grid-column-gap: 20px;
     padding: 20px;
     justify-content: space-around;
     justify-items: center;
     align-items: center;
-    grid-template-areas: 
-    "about__photo_1 about__photo_2 about__photo_3 about__photo_4 about__photo_5 about__photo_6";
+    grid-template-areas:
+        "about__photo_1 about__photo_2 about__photo_3 about__photo_4 about__photo_5 about__photo_6";
 }
+
 .about__photo_1 {
     grid-area: "about__photo_1";
-    height: 100px;
+    /*  height: 100px; */
 }
+
 .about__photo_2 {
     grid-area: "about__photo_2";
-    height: 100px;
+    /*  height: 100px; */
 }
+
 .about__photo_3 {
     grid-area: "about__photo_3";
-    height: 100px;
+    /* height: 100px; */
 }
+
 .about__photo_4 {
     grid-area: "about__photo_4";
-    height: 100px;
+    /* height: 100px; */
 }
+
 .about__photo_5 {
     grid-area: "about__photo_5";
-    height: 100px;
+    /* height: 100px; */
 }
+
 .about__photo_6 {
     grid-area: "about__photo_6";
-    height: 100px;
+    /* height: 100px; */
+}
+
+.about__photo_1,
+.about__photo_2,
+.about__photo_3,
+.about__photo_4,
+.about__photo_5,
+.about__photo_6 {
+    max-height: 500px;
 }
