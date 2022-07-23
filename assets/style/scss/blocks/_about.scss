@@ -1,0 +1,135 @@
+.about__img {
+    width: 90%;
+    grid-column: 2/3;
+    border-radius: 30px;
+}
+
+.about__title {
+    text-align: center;
+    margin: 5%;
+}
+
+.about__container {
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+}
+
+.about__text {
+    grid-column: 3/4;
+}
+
+.about__list {
+    font-size: 1.5rem;
+    list-style-position: outside;
+    list-style-image: url(../img/square_about.png);
+}
+
+.about__title_teacher {
+    margin-left: 5%;
+    color: $vivid-warm-color;
+}
+
+.about__list_li {
+    margin-bottom: 1rem;
+}
+
+/*gallery*/
+
+.about__photo {
+    display: grid;
+    grid-area: "photo_content";
+    grid-template-columns: repeat(6, 1fr);
+    max-height: 500px;
+    margin: 10% 5%;
+    grid-column-gap: 20px;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "about__photo_1 about__photo_2 about__photo_3 about__photo_4 about__photo_5 about__photo_6";
+}
+
+.about__photo_1 {
+    grid-area: "about__photo_1";
+}
+
+.about__photo_2 {
+    grid-area: "about__photo_2";
+}
+
+.about__photo_3 {
+    grid-area: "about__photo_3";
+}
+
+.about__photo_4 {
+    grid-area: "about__photo_4";
+}
+
+.about__photo_5 {
+    grid-area: "about__photo_5";
+}
+
+.about__photo_6 {
+    grid-area: "about__photo_6";
+}
+
+.about__photo_1,
+.about__photo_2,
+.about__photo_3,
+.about__photo_4,
+.about__photo_5,
+.about__photo_6 {
+    max-height: 280px;
+    border-radius: 15px;
+}
+
+.about__certificates_title {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--bs-heading-color);
+}
+.about__certificates {
+    display: grid;
+    grid-area: "certificate_content";
+    grid-template-columns: repeat(6, 1fr);
+    max-height: 500px;
+    margin: 5%;
+    grid-column-gap: 3%;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas:
+        "about__certificate_1 about__certificate_2 about__certificate_3 about__certificate_4 about__certificate_5 about__certificate_6";
+}
+
+.about__certificate_1 {
+    grid-area: "about__certificate_1";
+}
+
+.about__certificate_2 {
+    grid-area: "about__certificate_2";
+}
+
+.about__certificate_3 {
+    grid-area: "about__certificate_3";
+}
+
+.about__certificate_4 {
+    grid-area: "about__certificate_4";
+}
+
+.about__certificate_5 {
+    grid-area: "about__certificate_5";
+}
+
+.about__certificate_6 {
+    grid-area: "about__certificate_6";
+}
+
+.about__certificate_1,
+.about__certificate_2,
+.about__certificate_3,
+.about__certificate_4,
+.about__certificate_5,
+.about__certificate_6 {
+    max-height: 220px;
+}
