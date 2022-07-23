@@ -450,9 +450,18 @@
   margin-bottom: 1rem;
 }
 
+.about__content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(1rem, 1fr) minmax(auto, 1200px) minmax(1rem, 1fr);
+      grid-template-columns: minmax(1rem, 1fr) minmax(auto, 1200px) minmax(1rem, 1fr);
+      grid-template-areas: ". photo_content .";
+}
+
 .about__photo {
   display: -ms-grid;
   display: grid;
+  grid-area: "photo_content";
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
   -ms-grid-rows: 100px;
