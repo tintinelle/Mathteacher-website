@@ -27,6 +27,7 @@
 }
 .about__content {
     display: grid;
+    width: 60%;
     grid-template-columns: minmax(1rem, 1fr) minmax(auto, 1200px) minmax(1rem, 1fr);
     grid-template-areas: ". photo_content .";
 }
