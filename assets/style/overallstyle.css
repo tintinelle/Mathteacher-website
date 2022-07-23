@@ -396,9 +396,6 @@
 }
 
 @media screen and (max-width: 767px) {
-  .footer {
-    padding: 10%;
-  }
   .footer .footer__titile {
     text-align: center;
   }
