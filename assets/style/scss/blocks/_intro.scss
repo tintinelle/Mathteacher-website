@@ -1,0 +1,23 @@
+.main {
+
+    &_intro {
+        margin: 5% auto;
+    }
+
+    &__subtitle {
+        margin-bottom: 3%;
+
+        font-family: $title-font;
+        font-weight: 500;
+        font-size: 3rem;
+
+        text-align: center;
+        color: $text-color;
+    }
+
+    &__video {
+        margin-left: 6%;
+        border-radius: 30px;
+        width: 50%;
+    }
+}

@@ -1,18 +1,23 @@
 .header {
     display: grid;
-    grid-template-columns: 10% 1fr 60%;
+    grid-template-columns: 5% 1fr 60%;
     align-items: center;
 
     min-height: 6rem;
     padding: 0 6%;
+    margin-bottom: 2%;
 
     &__logo {
+        width: 90%;
     }
 
     &__title {
+        align-self: end;
+        margin-left: 0;
+        
         font-family: $main-font;
         font-style: italic;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
 
         color: $text-color;
     }

@@ -11,15 +11,21 @@
 
 .header {
   display: grid;
-  grid-template-columns: 10% 1fr 60%;
+  grid-template-columns: 5% 1fr 60%;
   align-items: center;
   min-height: 6rem;
   padding: 0 6%;
+  margin-bottom: 2%;
+}
+.header__logo {
+  width: 90%;
 }
 .header__title {
+  align-self: end;
+  margin-left: 0;
   font-family: "Rubik", sans-serif;
   font-style: italic;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #5E5E5E;
 }
 .header__nav {
@@ -62,7 +68,6 @@
   display: grid;
   grid-template-columns: 40% 60%;
   padding: 0 6%;
-  margin-bottom: 5%;
 }
 .main__photo {
   justify-self: end;
@@ -157,6 +162,23 @@
     margin: 5%;
   }
 }
+.main_intro {
+  margin: 5% auto;
+}
+.main__subtitle {
+  margin-bottom: 3%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 3rem;
+  text-align: center;
+  color: #5E5E5E;
+}
+.main__video {
+  margin-left: 6%;
+  border-radius: 30px;
+  width: 50%;
+}
+
 /*video block*/
 .video-block {
   display: flex;
