@@ -33,8 +33,14 @@
 }
 
 /*gallery*/
+.about__content {
+    display: grid;
+    grid-template-columns: minmax(1rem, 1fr) minmax(auto, 1200px) minmax(1rem, 1fr);
+    grid-template-areas: ". photo_content .";
+}
 .about__photo {
     display: grid;
+    grid-area: "photo_content";
     grid-template-columns: repeat(6, 1fr);
     /* grid-template-rows: 100px; */
     max-height: 500px;
