@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&family=Roboto:ital,wght@0,300;0,400;1,300&family=Rubik&display=swap');
 
 //Основной шрифт - rubik-400
-$main-font: 'Rubik', sans-serif;
+$main-font: 'Rubik',
+sans-serif;
 
-$title-font: 'Raleway', sans-serif;
+$title-font: 'Raleway',
+sans-serif;
 
-$italic-font: 'Roboto', sans-serif;
+$italic-font: 'Roboto',
+sans-serif;
 
 
 //шрифт для заголовка в футере
@@ -21,3 +24,31 @@ $italic-font: 'Roboto', sans-serif;
 }
 
 // Ильвина шрифты
+
+//video, education,feedback
+
+.video-title,
+.education-title {
+    font-family: $title-font;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.feedback-container__title {
+    font-family: $title-font;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.card-title,
+.edu-card__univers,
+.edu-card__years {
+    font-family: $title-font;
+    font-weight: 600;
+}
+
+.btn-primary_sp,
+.card-text,
+.edu-card__prof {
+    font-family: $main-font;
+}
