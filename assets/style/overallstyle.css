@@ -11,7 +11,7 @@
 
 .header {
   display: grid;
-  grid-template-columns: 5% 1fr 60%;
+  grid-template-columns: 5% 1fr 50%;
   align-items: center;
   min-height: 6rem;
   padding: 0 6%;
@@ -28,27 +28,29 @@
   font-size: 1.5rem;
   color: #5E5E5E;
 }
-.header__nav {
-  justify-self: end;
+
+.nav {
   display: flex;
   justify-content: space-between;
-  width: 80%;
-  font-family: "Rubik", sans-serif;
+  width: 90%;
 }
-.header__nav a {
-  text-decoration: none;
-  padding: 0.5% 2%;
-  border-radius: 10px;
+.nav__item {
+  font-family: "Rubik", sans-serif;
+  padding: 0.7% 2%;
+  border-radius: 20px;
   background-color: #5EC6C7;
+}
+.nav__item a {
+  text-decoration: none;
   color: white;
 }
-.header__nav a:last-child {
+.nav__item:last-child {
   background-color: #FF9190;
 }
-.header__nav a:hover {
+.nav__item:hover {
   background-color: #4EB6B7;
 }
-.header__nav a:hover:last-child {
+.nav__item:hover:last-child {
   background-color: #FF4F55;
 }
 
