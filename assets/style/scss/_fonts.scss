@@ -32,12 +32,7 @@ sans-serif;
     font-family: $title-font;
     font-size: 2em;
     font-weight: 600;
-}
-
-.feedback-container__title {
-    font-family: $title-font;
-    font-size: 2em;
-    font-weight: 400;
+    color: $text-color;
 }
 
 .card-title,
@@ -45,10 +40,12 @@ sans-serif;
 .edu-card__years {
     font-family: $title-font;
     font-weight: 600;
+    color: $text-color;
 }
 
 .btn-primary_sp,
 .card-text,
 .edu-card__prof {
     font-family: $main-font;
+    color: $text-color;
 }
