@@ -745,6 +745,22 @@
   transition: 1s;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .about__list {
+    font-size: 1rem;
+  }
+  .about__img {
+    width: 100%;
+  }
+  .about__title_teacher {
+    font-size: 1.4rem;
+  }
+  .about__photo,
+  .about__certificate {
+    overflow-x: scroll;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .about__container {
     display: block;
@@ -756,6 +772,7 @@
   }
   .about__img {
     margin-bottom: 5%;
+    width: 100%;
   }
   .about__photo,
   .about__certificate {
