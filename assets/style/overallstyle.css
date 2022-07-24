@@ -593,8 +593,6 @@
   max-height: 500px;
   margin: 10% 5%;
   grid-column-gap: 20px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -745,5 +743,23 @@
   max-height: 220px;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+@media screen and (max-width: 767px) {
+  .about__container {
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .about__list {
+    font-size: 1rem;
+  }
+  .about__img {
+    margin-bottom: 5%;
+  }
+  .about__photo,
+  .about__certificate {
+    overflow-x: scroll;
+  }
 }
 /*# sourceMappingURL=overallstyle.css.map */
