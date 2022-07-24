@@ -59,6 +59,11 @@
     padding: 1rem;
 }
 
+.card-body_oge {
+    padding-left: 0.8em;
+    padding-right: 0.8em;
+}
+
 .btn-primary_sp {
     margin: 1em;
 
@@ -231,6 +236,10 @@
     .btn-primary,
     .card-title_exam {
         display: none;
+    }
+
+    .card-title {
+        font-size: 1rem;
     }
 
     .education-container {
