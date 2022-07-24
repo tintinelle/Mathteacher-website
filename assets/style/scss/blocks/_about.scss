@@ -42,53 +42,73 @@
     max-height: 500px;
     margin: 10% 5%;
     grid-column-gap: 20px;
-    justify-content: space-around;
     justify-items: center;
     align-items: center;
     grid-template-areas:
         "about__photo_1 about__photo_2 about__photo_3 about__photo_4 about__photo_5 about__photo_6";
+
+    &_1 {
+        grid-area: "about__photo_1";
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &_2 {
+        grid-area: "about__photo_2";
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &_3 {
+        grid-area: "about__photo_3";
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &_4 {
+        grid-area: "about__photo_4";
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+
+    &_5 {
+        grid-area: "about__photo_5";
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &_6 {
+        grid-area: "about__photo_6";
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &_1,
+    &_2,
+    &_3,
+    &_4,
+    &_5,
+    &_6 {
+        max-height: 280px;
+        border-radius: 15px;
+        transition: 1s;
+    }
 }
 
-.about__photo_1 {
-    grid-area: "about__photo_1";
-}
-
-.about__photo_2 {
-    grid-area: "about__photo_2";
-}
-
-.about__photo_3 {
-    grid-area: "about__photo_3";
-}
-
-.about__photo_4 {
-    grid-area: "about__photo_4";
-}
-
-.about__photo_5 {
-    grid-area: "about__photo_5";
-}
-
-.about__photo_6 {
-    grid-area: "about__photo_6";
-}
-
-.about__photo_1,
-.about__photo_2,
-.about__photo_3,
-.about__photo_4,
-.about__photo_5,
-.about__photo_6 {
-    max-height: 280px;
-    border-radius: 15px;
-}
-
-.about__certificates_title {
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--bs-heading-color);
-}
-.about__certificates {
+.about__certificate {
     display: grid;
     grid-area: "certificate_content";
     grid-template-columns: repeat(6, 1fr);
@@ -99,37 +119,111 @@
     align-items: center;
     grid-template-areas:
         "about__certificate_1 about__certificate_2 about__certificate_3 about__certificate_4 about__certificate_5 about__certificate_6";
+
+    &_title {
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--bs-heading-color);
+    }
+
+    &_1 {
+        grid-area: "about__certificate_1";
+        transition: 1s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &_2 {
+        grid-area: "about__certificate_2";
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &_3 {
+        grid-area: "about__certificate_3";
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &_4 {
+        grid-area: "about__certificate_4";
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &_5 {
+        grid-area: "about__certificate_5";
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &_6 {
+        grid-area: "about__certificate_6";
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    &_1,
+    &_2,
+    &_3,
+    &_4,
+    &_5,
+    &_6 {
+        max-height: 220px;
+        transition: 1s;
+    }
 }
 
-.about__certificate_1 {
-    grid-area: "about__certificate_1";
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .about__list {
+        font-size: 1rem;
+    }
+
+    .about__img {
+        width: 100%;
+    }
+
+    .about__title_teacher {
+        font-size: 1.4rem;
+    }
+
+    .about__photo,
+    .about__certificate {
+        overflow-x: scroll;
+    }
 }
 
-.about__certificate_2 {
-    grid-area: "about__certificate_2";
-}
+@media screen and (max-width: 767px) {
+    .about__container {
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
-.about__certificate_3 {
-    grid-area: "about__certificate_3";
-}
+    .about__list {
+        font-size: 1rem;
+    }
 
-.about__certificate_4 {
-    grid-area: "about__certificate_4";
-}
+    .about__img {
+        margin-bottom: 5%;
+        width: 100%;
+    }
 
-.about__certificate_5 {
-    grid-area: "about__certificate_5";
-}
+    .about__photo,
+    .about__certificate {
+        overflow-x: scroll;
+    }
 
-.about__certificate_6 {
-    grid-area: "about__certificate_6";
-}
-
-.about__certificate_1,
-.about__certificate_2,
-.about__certificate_3,
-.about__certificate_4,
-.about__certificate_5,
-.about__certificate_6 {
-    max-height: 220px;
 }
