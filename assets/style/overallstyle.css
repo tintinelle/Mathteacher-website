@@ -774,6 +774,9 @@
     margin-bottom: 5%;
     width: 100%;
   }
+  .about__title_teacher {
+    font-size: 1.4rem;
+  }
   .about__photo,
   .about__certificate {
     overflow-x: scroll;
