@@ -656,25 +656,14 @@
           transform: scale(1.2);
 }
 
-.about__photo_1,
-.about__photo_2,
-.about__photo_3,
-.about__photo_4,
-.about__photo_5,
-.about__photo_6 {
+.about__photo_1, .about__photo_2, .about__photo_3, .about__photo_4, .about__photo_5, .about__photo_6 {
   max-height: 280px;
   border-radius: 15px;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-.about__certificates_title {
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--bs-heading-color);
-}
-
-.about__certificates {
+.about__certificate {
   display: -ms-grid;
   display: grid;
   grid-area: "certificate_content";
@@ -688,6 +677,12 @@
       -ms-flex-align: center;
           align-items: center;
       grid-template-areas: "about__certificate_1 about__certificate_2 about__certificate_3 about__certificate_4 about__certificate_5 about__certificate_6";
+}
+
+.about__certificate_title {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--bs-heading-color);
 }
 
 .about__certificate_1 {
@@ -746,12 +741,7 @@
           transform: scale(1.2);
 }
 
-.about__certificate_1,
-.about__certificate_2,
-.about__certificate_3,
-.about__certificate_4,
-.about__certificate_5,
-.about__certificate_6 {
+.about__certificate_1, .about__certificate_2, .about__certificate_3, .about__certificate_4, .about__certificate_5, .about__certificate_6 {
   max-height: 220px;
   -webkit-transition: 1s;
   transition: 1s;
