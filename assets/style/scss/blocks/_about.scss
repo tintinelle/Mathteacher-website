@@ -52,25 +52,41 @@
 .about__photo_1 {
     grid-area: "about__photo_1";
 }
+.about__photo_1:hover {
+    transform: scale(1.2);
+}
 
 .about__photo_2 {
     grid-area: "about__photo_2";
+}
+.about__photo_2:hover {
+    transform: scale(1.2);
 }
 
 .about__photo_3 {
     grid-area: "about__photo_3";
 }
-
+.about__photo_3:hover {
+    transform: scale(1.2);
+}
 .about__photo_4 {
     grid-area: "about__photo_4";
+}
+.about__photo_4:hover {
+    transform: scale(1.2);
 }
 
 .about__photo_5 {
     grid-area: "about__photo_5";
 }
-
+.about__photo_5:hover {
+    transform: scale(1.2);
+}
 .about__photo_6 {
     grid-area: "about__photo_6";
+}
+.about__photo_6:hover {
+    transform: scale(1.2);
 }
 
 .about__photo_1,
@@ -81,6 +97,7 @@
 .about__photo_6 {
     max-height: 280px;
     border-radius: 15px;
+    transition: 1s;
 }
 
 .about__certificates_title {
@@ -103,28 +120,45 @@
 
 .about__certificate_1 {
     grid-area: "about__certificate_1";
+    transition: 1s;
+}
+.about__certificate_1:hover {
+    transform: scale(1.2);
 }
 
 .about__certificate_2 {
     grid-area: "about__certificate_2";
 }
+.about__certificate_2:hover {
+    transform: scale(1.2);
+}
 
 .about__certificate_3 {
     grid-area: "about__certificate_3";
+}
+.about__certificate_3:hover {
+    transform: scale(1.2);
 }
 
 .about__certificate_4 {
     grid-area: "about__certificate_4";
 }
+.about__certificate_4:hover {
+    transform: scale(1.2);
+}
 
 .about__certificate_5 {
     grid-area: "about__certificate_5";
 }
-
+.about__certificate_5:hover {
+    transform: scale(1.2);
+}
 .about__certificate_6 {
     grid-area: "about__certificate_6";
 }
-
+.about__certificate_6:hover {
+    transform: scale(1.2);
+}
 .about__certificate_1,
 .about__certificate_2,
 .about__certificate_3,
@@ -132,4 +166,5 @@
 .about__certificate_5,
 .about__certificate_6 {
     max-height: 220px;
+    transition: 1s;
 }

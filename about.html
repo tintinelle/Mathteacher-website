@@ -13,20 +13,56 @@
     <title>Обо мне</title>
 </head>
 <body>
-<header class="header">
-    <img class="header__logo" src="" alt="Логотип математика в квадрате">
-    <p class="header__title">Математика в квадрате</p>
+    <header class="header">
+        <img class="header__logo" src="assets/img/logo.png" alt="Логотип математика в квадрате">
+        <p class="header__title">Математика в квадрате</p>
+        <!-- <nav class="header__nav">
+            <a target="_blanc" href="about.html" title="Обо мне">Обо мне</a>
+            <a href="#">К уроку</a>
+            <a href="#video">Видео</a>
+            <a href="#footer">Где меня найти</a>
+            <a href="https://wapp.click/79085834381" target="_blank">Напишите мне <i
+                    class="fa-brands fa-whatsapp"></i></a>
+        </nav> -->
 
-    <nav class="header__nav">
-        <a href="#">Обо мне</a>
-        <a href="#">К уроку</a>
-        <a href="#video">Видео</a>
-        <a href="#footer">Где меня найти</a>
-        <a href="#">Напишите мне</a>
-    </nav>
+        <nav class="navbar navbar-collapse navbar-expand-md">
+            <div class="container-fluid">
+                <button class="navbar-toggler float-xs-right" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav nav">
+                            <li class="nav-item nav__item">
+                                <a target="_blanc" href="about.html" title="Обо мне">Обо мне</a>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a href="#">К уроку</a>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a href="#video">Видео</a>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a href="#footer">Где меня найти</a>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a href="https://wapp.click/79085834381" target="_blank">Напишите мне <i class="fa-brands fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-    <!-- <button class="header__button">Напишите мне</button> -->
-</header>
+
+    </header>
 
 
     <h1 class="about__title">Обо мне</h1>
