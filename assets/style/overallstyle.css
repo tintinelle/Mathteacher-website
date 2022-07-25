@@ -59,11 +59,11 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
 }
 .nav__item {
   font-family: "Rubik", sans-serif;
-  padding: 0.7% 2%;
+  padding: 0.7% 4%;
   border-radius: 20px;
   background-color: #5EC6C7;
 }
@@ -76,6 +76,7 @@
 }
 .nav__item:hover {
   background-color: #4EB6B7;
+  padding: 0.7% 6%;
 }
 .nav__item:hover:last-child {
   background-color: #FF4F55;
