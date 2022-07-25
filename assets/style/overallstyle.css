@@ -38,7 +38,7 @@
 
 .header {
   display: grid;
-  grid-template-columns: 5% 1fr 50%;
+  grid-template-columns: 5% 1fr 60%;
   align-items: center;
   min-height: 6rem;
   padding: 0 6%;
@@ -48,8 +48,8 @@
   width: 90%;
 }
 .header__title {
-  align-self: end;
   margin-left: 0;
+  margin-bottom: 0;
   font-family: "Rubik", sans-serif;
   font-style: italic;
   font-size: 1.5rem;
@@ -59,11 +59,11 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
 }
 .nav__item {
   font-family: "Rubik", sans-serif;
-  padding: 0.7% 2%;
+  padding: 0.7% 4%;
   border-radius: 20px;
   background-color: #5EC6C7;
 }
@@ -76,13 +76,20 @@
 }
 .nav__item:hover {
   background-color: #4EB6B7;
+  padding: 0.7% 6%;
 }
 .nav__item:hover:last-child {
   background-color: #FF4F55;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .header__title {
+    font-size: 1.3rem;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .header {
+    grid-template-columns: 5% 1fr 75%;
     font-size: 0.8rem;
   }
   .header__logo {
@@ -91,25 +98,34 @@
   .header__title {
     align-self: center;
     margin-left: 5%;
-    width: 80%;
+    margin-bottom: 0;
+    width: 70%;
     font-size: 0.9rem;
+    line-height: 100%;
   }
-  .header__nav {
+  .nav {
     width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
   .header {
-    grid-template-columns: 15% 1fr 60%;
+    grid-template-columns: 15% 1fr 20%;
   }
   .header__logo {
     width: 100%;
   }
   .header__title {
     align-self: center;
+    width: 40%;
     margin-left: 5%;
+    margin-bottom: 0;
     font-size: 1rem;
     line-height: 100%;
+  }
+  .nav__item {
+    padding: 5%;
+    margin-bottom: 5%;
+    text-align: center;
   }
 }
 .main__banner {
@@ -142,25 +158,40 @@
   font-size: 1.2rem;
   color: #5E5E5E;
 }
-.main__button {
-  font-family: "Rubik", sans-serif;
-  font-size: 1.2rem;
-}
-.main__button a {
-  text-decoration: none;
-  color: white;
-}
-.main__button_about {
+.main__about {
+  width: 30%;
   padding: 1.5% 8%;
   border-radius: 10px;
   border: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
   background-color: #FF9190;
 }
-.main__button_about:hover {
-  padding: 1.5% 10%;
+.main__about a {
+  text-decoration: none;
+  color: white;
+}
+.main__about:hover {
+  padding: 2% 8%;
   background-color: #FF4F55;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+  .main__text {
+    padding: 7% 15%;
+  }
+  .main__photo {
+    width: 95%;
+  }
+  .main__title {
+    font-size: 1.6rem;
+  }
+  .main__about {
+    width: 40%;
+    padding: 1.5% 8%;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .main__text {
     padding: 10%;
@@ -174,8 +205,9 @@
   .main__slogan {
     font-size: 1rem;
   }
-  .main__button {
+  .main__about {
     font-size: 1rem;
+    width: 40%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -185,17 +217,16 @@
     background-image: url(../img/photo_banner.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    min-height: 75vh;
   }
   .main__photo {
     display: none;
   }
   .main__text {
-    background-color: rgba(230, 230, 250, 0.5843137255);
-    border-radius: 15px;
     margin-top: 70%;
     padding: 4%;
+    border-radius: 15px;
     text-align: center;
+    background-color: rgba(230, 230, 250, 0.5843137255);
   }
   .main__title {
     font-size: 1.2rem;
@@ -205,9 +236,14 @@
     color: #ff1c24;
   }
   .main__slogan {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #454545;
     margin: 5%;
+  }
+  .main__about {
+    width: 40%;
+    margin: auto;
+    padding: 1.5% 5%;
   }
 }
 .main_intro {
