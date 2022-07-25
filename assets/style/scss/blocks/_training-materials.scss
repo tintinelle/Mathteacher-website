@@ -1,0 +1,97 @@
+// блок "к уроку"
+.main__training-materials {
+    color: $text-color;
+    max-width: 1200px;
+    max-height: 570px;
+    margin-top: 1rem;
+    margin-bottom: 2em;
+    padding-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    border: none;
+    border-radius: 1em;
+    box-shadow: 4px 4px 16px rgb(78 55 55 / 37%), inset 0px 4px 16px rgb(255 255 255 / 50%);
+}
+
+.main__training-materials_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.main__training-materials_title {
+    padding: 2%;
+    text-align: center;
+}
+
+.main__training-materials_card {
+    max-width: 200px;
+    min-width: 100px;
+    min-height: 250px;
+    margin: 0.7rem;
+    text-align: center;
+
+    .card-text {
+        margin-top: 15%;
+    }
+
+    .card-img-top {
+        border-radius: 1em;
+    }
+}
+
+.main__training-materials_button {
+    background-color: $pastel-warm-color;
+    display: block;
+    width: 100%;
+    border-radius: 0.375rem;;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.main__training-materials_button:hover {
+    background-color: $vivid-warm-color;
+    color: #FFF;
+}
+
+.main__training-materials_button:focus {
+    box-shadow: 0 0 0 0.25rem rgba(rgb(49,132,253), .5);
+}
+
+// страницы "Презентации", "Самостоятельные работы" и "Контрольные работы"
+.self-training, .tests, .presentations {
+    color: $text-color;
+    padding: 25px 6% ;
+}
+
+.links__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+.training-material__title {
+    color: $vivid-warm-color;
+    text-align: center;
+    padding-bottom: 6%;
+}
+
+.nth-grade__category {
+    width: 350px;
+}
+
+// .training-material__subtitle {
+
+// }
+
+.training-material__link {
+    text-decoration: none;
+    color: $pastel-warm-color;
+}
+
+.training-material__link:hover{
+    color: $pastel-cold-color;
+}
