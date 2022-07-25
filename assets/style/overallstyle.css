@@ -327,6 +327,75 @@
   --bs-btn-disabled-border-color: #FF4F55;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .video-block {
+    /* min-width: 90vw; */
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card {
+    max-width: 150px;
+    margin: 0.7rem;
+  }
+  .card,
+.card-img-top,
+.card-body {
+    max-width: 150px;
+  }
+  .card-body {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    max-height: 300px;
+  }
+  .card_test {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  .card-text,
+.btn-primary,
+.card-title_exam {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .video-block {
+    /* min-width: 90vw; */
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .card {
+    max-width: 150px;
+    margin: 0.7rem;
+  }
+  .card,
+.card-img-top,
+.card-body {
+    max-width: 150px;
+  }
+  .card-body {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    max-height: 300px;
+  }
+  .card_test {
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  .card-text,
+.btn-primary,
+.card-title_exam {
+    display: none;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+}
 /*education block*/
 .education-block {
   margin-top: 2rem;
@@ -383,37 +452,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .video-block {
-    /* min-width: 90vw; */
-    max-height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .card {
-    max-width: 150px;
-    margin: 0.7rem;
-  }
-  .card,
-.card-img-top,
-.card-body {
-    max-width: 150px;
-  }
-  .card-body {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-    max-height: 300px;
-  }
-  .card_test {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-  }
-  .card-text,
-.btn-primary,
-.card-title_exam {
-    display: none;
-  }
   .education-container {
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
@@ -429,40 +467,6 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .video-block {
-    /* min-width: 90vw; */
-    max-height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .card {
-    max-width: 150px;
-    margin: 0.7rem;
-  }
-  .card,
-.card-img-top,
-.card-body {
-    max-width: 150px;
-  }
-  .card-body {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-    max-height: 300px;
-  }
-  .card_test {
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
-  }
-  .card-text,
-.btn-primary,
-.card-title_exam {
-    display: none;
-  }
-  .card-title {
-    font-size: 1rem;
-  }
   .education-container {
     min-height: -webkit-fit-content;
     min-height: -moz-fit-content;
