@@ -18,25 +18,16 @@
     <header class="header">
         <img class="header__logo" src="assets/img/logo.png" alt="Логотип математика в квадрате">
         <p class="header__title">Математика в квадрате</p>
-        <!-- <nav class="header__nav">
-            <a target="blanc" href="about.html" title="Обо мне">Обо мне</a>
-            <a href="#">К уроку</a>
-            <a href="#video">Видео</a>
-            <a href="#footer">Где меня найти</a>
-            <a href="https://wapp.click/79085834381" target="_blank">Напишите мне <i
-                    class="fa-brands fa-whatsapp"></i></a>
-        </nav> -->
 
         <nav class="navbar navbar-collapse navbar-expand-md">
             <div class="container-fluid">
-                <button class="navbar-toggler float-xs-right" type="button" data-bs-toggle="offcanvas"
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+                    <div class="offcanvas-header justify-content-end">
                         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                             aria-label="Close"></button>
                     </div>
@@ -71,9 +62,9 @@
                 <h1 class="main__title">Здравствуйте! <br /> Меня зовут Галина Александровна, я - <br /> <span
                         class="main__title main__title_vivid">современный учитель математики!</span> </h1>
                 <p class="main__slogan">Верю в талант и исключительность каждого ребёнка!</p>
-                    <div class="main__about">
-                        <a target="blanc" href="about.html" title="Обо мне">Обо мне</a>
-                    </div>
+                <div class="main__about">
+                    <a target="blanc" href="about.html" title="Обо мне">Обо мне</a>
+                </div>
             </section>
         </section>
 
@@ -83,38 +74,36 @@
                 poster="assets/img/poster_video.png"></video>
         </section>
         <!-- Ильвина конец -->
-<section class="lessons-block" id="lessons">
-    <h4 class="lessons-title">К УРОКУ</h4>
-    <div class="lessons-container">
-        <div class="lesson-card">
-            <img src="./assets/img/presentation.jpg" class="card-img-top card-img-top_sp" alt="Презентации">
-            <div class="lesson-card_body">
-                <h5 class="card-title">Презентации</h5>
-                <p class="card-text">Презентации PowerPoint по алгебре и геометрии</p>
-            </div>
-            <a href="#"
-                class="btn btn-primary btn-primary_sp">Перейти</a>
-        </div>
-        <div class="lesson-card">
-            <img src="./assets/img/controlnaya.jpg" class="card-img-top" alt="Презентации">
-            <div class="lesson-card_body">
-                <h5 class="card-title">Контрольные работы</h5>
-                <p class="card-text">Контрольные работы по алгебре и геометрии в 2-х вариантах</p>
-            </div>
-            <a href="#"
-                class="btn btn-primary btn-primary_sp">Перейти</a>
-        </div>
-        <div class="lesson-card">
-            <img src="./assets/img/samost.jpg" class="card-img-top" alt="Презентации">
-            <div class="lesson-card_body">
-                <h5 class="card-title">Самостоятельные работы</h5>
-                <p class="card-text">Самостоятельные работы по алгебре и геометрии в 2-х вариантах</p>
-            </div>
-            <a href="#"
-                class="btn btn-primary btn-primary_sp">Перейти</a>
-        </div>
 
-</section>
+        <section class="lessons-block" id="lessons">
+            <h4 class="lessons-title">К УРОКУ</h4>
+            <div class="lessons-container">
+                <div class="lesson-card">
+                    <img src="./assets/img/presentation.jpg" class="card-img-top card-img-top_sp" alt="Презентации">
+                    <div class="lesson-card_body">
+                        <h5 class="card-title">Презентации</h5>
+                        <p class="card-text">Презентации PowerPoint по алгебре и геометрии</p>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-primary_sp">Перейти</a>
+                </div>
+                <div class="lesson-card">
+                    <img src="./assets/img/controlnaya.jpg" class="card-img-top" alt="Презентации">
+                    <div class="lesson-card_body">
+                        <h5 class="card-title">Контрольные работы</h5>
+                        <p class="card-text">Контрольные работы по алгебре и геометрии в 2-х вариантах</p>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-primary_sp">Перейти</a>
+                </div>
+                <div class="lesson-card">
+                    <img src="./assets/img/samost.jpg" class="card-img-top" alt="Презентации">
+                    <div class="lesson-card_body">
+                        <h5 class="card-title">Самостоятельные работы</h5>
+                        <p class="card-text">Самостоятельные работы по алгебре и геометрии в 2-х вариантах</p>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-primary_sp">Перейти</a>
+                </div>
+
+        </section>
         <section class="video-block" id="video">
             <h4 class="video-title">ВИДЕО</h4>
             <div class="video-container">
@@ -350,7 +339,8 @@
                             </div>
                             <div class="mt-auto">
                                 <div class="flex justify-content-around">
-                                    <a href="https://www.youtube.com/channel/UCeFS2lfyOwbgVhkuRKadngw" class="me-4 text-reset social">
+                                    <a href="https://www.youtube.com/channel/UCeFS2lfyOwbgVhkuRKadngw"
+                                        class="me-4 text-reset social">
                                         <img src="./assets/img/footer_img/icon-youtube.png" alt="YouTube">
                                     </a>
                                     <a href="https://vk.com/club_math_in2" class="me-4 text-reset social">

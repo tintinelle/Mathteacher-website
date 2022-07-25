@@ -1,6 +1,3 @@
-// *{
-//     border: 1px solid sienna;
-// }
 .main {
     &__banner {
         display: grid;
@@ -66,6 +63,26 @@
     }
 }
 
+@media screen and (min-width:1024px) and (max-width:1300px) {
+    .main {
+        &__text {
+            padding: 7% 15%;
+        }
+
+        &__photo {
+            width: 95%;
+        }
+
+        &__title {
+            font-size: 1.6rem;
+        }
+
+        &__about {
+            width: 40%;
+            padding: 1.5% 8%;
+        }
+    }
+}
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     .main {
@@ -100,7 +117,6 @@
             background-image: url(../img/photo_banner.png);
             background-size: 100%;
             background-repeat: no-repeat;
-            min-height: 75vh;
         }
 
         &__photo {
@@ -108,11 +124,13 @@
         }
 
         &__text {
-            background-color: #E6E6FA95;
-            border-radius: 15px;
             margin-top: 70%;
             padding: 4%;
+            border-radius: 15px;
+
             text-align: center;
+
+            background-color: #E6E6FA95;
         }
 
         &__title {
@@ -125,14 +143,15 @@
         }
 
         &__slogan {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             color: darken($text-color, $amount: 10%);
             margin: 5%;
         }
 
         &__about {
-
-        }
+            width: 40%;
+            margin: auto;
+            padding: 1.5% 5%;
         }
     }
-
+}
