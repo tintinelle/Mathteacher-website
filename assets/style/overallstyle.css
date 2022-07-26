@@ -249,6 +249,8 @@
   }
   .main__text {
     margin-top: 70%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 4%;
     border-radius: 15px;
     text-align: center;
@@ -339,7 +341,8 @@
     font-size: 1.4rem;
   }
   .main__video {
-    margin-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
     width: 90%;
   }
 }
@@ -349,6 +352,8 @@
   }
   .main__video {
     width: 90%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*lessons*/
