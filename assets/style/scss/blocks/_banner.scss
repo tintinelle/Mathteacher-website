@@ -1,12 +1,9 @@
-// *{
-//     border: 1px solid sienna;
-// }
 .main {
     &__banner {
-    display: grid;
-    grid-template-columns: 40% 60%;
+        display: grid;
+        grid-template-columns: 40% 60%;
 
-    padding: 0 6%;
+        padding: 0 6%;
     }
 
     &__photo {
@@ -33,7 +30,7 @@
             padding: 0;
         }
     }
-    
+
     &__slogan {
         margin: 5% auto 12% auto;
         font-family: $main-font;
@@ -42,26 +39,47 @@
         color: $text-color;
     }
 
-    &__button {
+    &__about {
+        width: 30%;
+        padding: 1.5% 8%;
+        border-radius: 10px;
+        border: none;
+
         font-family: $main-font;
         font-size: 1.2rem;
+        text-align: center;
+
+        background-color: $pastel-warm-color;
 
         a {
             text-decoration: none;
             color: white;
         }
 
-        &_about {
+        &:hover {
+            padding: 2% 8%;
+            background-color: $vivid-warm-color;
+        }
+    }
+}
+
+@media screen and (min-width:1024px) and (max-width:1300px) {
+    .main {
+        &__text {
+            padding: 7% 15%;
+        }
+
+        &__photo {
+            width: 95%;
+        }
+
+        &__title {
+            font-size: 1.6rem;
+        }
+
+        &__about {
+            width: 40%;
             padding: 1.5% 8%;
-            border-radius: 10px;
-            border: none;
-
-            background-color: $pastel-warm-color;
-
-            &:hover {
-                padding: 1.5% 10% ;
-                background-color: $vivid-warm-color;
-            }
         }
     }
 }
@@ -71,12 +89,12 @@
         &__text {
             padding: 10%;
         }
-    
-		&__photo {
-            width: 100%;
-		}
 
-		&__title {
+        &__photo {
+            width: 100%;
+        }
+
+        &__title {
             font-size: 1.3rem;
         }
 
@@ -84,77 +102,56 @@
             font-size: 1rem;
         }
 
-        &__button {
+        &__about {
             font-size: 1rem;
+            width: 40%;
         }
-}
+    }
 }
 
 @media screen and (max-width:767px) {
     .main {
-
-		// .main__banner
-
-		&__banner {
+        &__banner {
             display: flex;
             margin-top: 3%;
             background-image: url(../img/photo_banner.png);
             background-size: 100%;
             background-repeat: no-repeat;
-            min-height: 75vh;
-		}
-
-		// .main__photo
-
-		&__photo {
-            display: none;
-		}
-
-        &__text {
-            background-color: #E6E6FA95;
-            // background-color: #2F4F4F80;
-            border-radius: 15px;
-            margin-top: 70%;
-            padding: 4%;
-            text-align: center;
         }
 
-		// .main__title
+        &__photo {
+            display: none;
+        }
 
-		&__title {
+        &__text {
+            margin-top: 70%;
+            padding: 4%;
+            border-radius: 15px;
+
+            text-align: center;
+
+            background-color: #E6E6FA95;
+        }
+
+        &__title {
             font-size: 1.2rem;
-            // background-color: #E6E6FA90;
             color: darken($text-color, $amount: 10%);
-            // margin: 89% auto 0 auto;
 
             &_vivid {
-                // background-color: #E6E6FA00;
                 color: darken($vivid-warm-color, $amount: 10%);
             }
-		}
+        }
 
-		// .main__text
-
-		&__slogan {
-            font-size: 0.8rem;
-            // background-color: #E6E6FA90;
+        &__slogan {
+            font-size: 0.9rem;
             color: darken($text-color, $amount: 10%);
-            // margin: 0 auto;
             margin: 5%;
-            
-		}
+        }
 
-		// .main__button
-
-		&__button {
-            // background-color: #E6E6FA90;
-            
-
-			// .main__button_about
-
-			&_about {
-			}
-		}
-}
-
+        &__about {
+            width: 40%;
+            margin: auto;
+            padding: 1.5% 5%;
+        }
+    }
 }
