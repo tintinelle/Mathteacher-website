@@ -1,7 +1,6 @@
 .main {
 
     &_intro {
-        /*  margin: 5% auto; */
 
         display: flex;
         flex-direction: column;
@@ -23,7 +22,6 @@
     }
 
     &__video {
-        /* margin-left: 6%; */
         border-radius: 30px;
         width: 50%;
     }
@@ -37,7 +35,7 @@
     }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (min-width:321px) and (max-width:767px) {
     .main {
         &__subtitle {
             font-size: 1.4rem;
@@ -45,6 +43,18 @@
 
         &__video {
             margin-left: 5%;
+            width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .main {
+        &__subtitle {
+            font-size: 1.2rem;
+        }
+
+        &__video {
             width: 90%;
         }
     }
