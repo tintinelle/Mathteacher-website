@@ -40,7 +40,7 @@ $bgFooter: #394C7D;
     }
 
     @media screen and (max-width:767px) {
-        padding: 10%;
+        // padding: 10%;
 
         .footer__titile {
             text-align: center;
@@ -58,4 +58,9 @@ $bgFooter: #394C7D;
             text-align: center;
         }
     }
+}
+
+.footer__content-link {
+    text-decoration: none;
+    color: $footer-information__link;
 }

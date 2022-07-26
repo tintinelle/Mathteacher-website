@@ -16,37 +16,103 @@
 <body>
     <!-- Ильвина начало -->
     <header class="header">
-        <img class="header__logo" src="" alt="Логотип математика в квадрате">
+        <img class="header__logo" src="assets/img/logo.png" alt="Логотип математика в квадрате">
         <p class="header__title">Математика в квадрате</p>
 
-        <nav class="header__nav">
-            <a href="#">Обо мне</a>
-            <a href="#">К уроку</a>
-            <a href="#video">Видео</a>
-            <a href="#footer">Где меня найти</a>
-            <a href="#">Напишите мне</a>
+        <nav class="navbar navbar-collapse navbar-expand-md">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header justify-content-end">
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav nav">
+                            <li class="nav-item nav__item">
+                                <a target="blanc" href="about.html" title="Обо мне">Обо мне</a>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a href="#lessons">К уроку</a>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a href="#video">Видео</a>
+                            </li>
+                            <li class="nav-item nav__item">
+                                <a href="https://wapp.click/79085834381" target="_blank">Напишите мне <i
+                                        class="fa-brands fa-whatsapp"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
 
-        <!-- <button class="header__button">Напишите мне</button> -->
+
     </header>
 
     <main class="main">
         <section class="main__banner">
-            <img class="main__photo" src="assets/img/photo_banner.JPG" alt="Фото Галины">
-            <h1 class="main__title">Здравствуйте! <br /> Меня зовут Галина Александровна, я - <span
-                    class="main__title main__title_vivid">современный учитель математики!</span> </h1>
-            <p class="main__text">Верю в талант и исключительность каждого ребёнка!</p>
-            <div class="main__button">
-                <button class="main__button_about">Oбо мне</button>
-            </div>
+            <img class="main__photo" src="assets/img/photo_banner.png" alt="Фото Галины">
+            <section class="main__text">
+                <h1 class="main__title">Здравствуйте! <br /> Меня зовут Галина Александровна, я - <br /> <span
+                        class="main__title main__title_vivid">современный учитель математики!</span> </h1>
+                <p class="main__slogan">Верю в талант и исключительность каждого ребёнка!</p>
+                <div class="main__about">
+                    <a target="blanc" href="about.html" title="Обо мне">Обо мне</a>
+                </div>
+            </section>
+        </section>
+
+        <section class="main_intro">
+            <h2 class="main__subtitle">Давайте знакомиться!</h2>
+            <video class="main__video" preload="metadata" controls src="assets/video/intro-video_2.mp4"
+                poster="assets/img/poster_video.png"></video>
         </section>
         <!-- Ильвина конец -->
+        <section class="main__training-materials" id="#training-materials">
+            <h4 class="main__training-materials_title">К УРОКУ</h4>
+            <div class="main__training-materials_container">
+                <div class="main__training-materials_card">
+                    <a href="presentations.html">
+                        <img src="./assets/img/presentation_cover.png" class="card-img-top" alt="Презентации"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Презентации</h5>
+                        <p class="card-text">Презентации с теорией по алгебре и геометрии за 6-9 класс</p>
+                    </div>
+                    <a href="presentations.html" class="main__training-materials_button">Перейти</a>
+                </div>
+                <div class="main__training-materials_card">
+                    <a href="tests.html"><img src="./assets/img/tests_cover.png" class="card-img-top"
+                            alt="Контрольные работы"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Контрольные работы</h5>
+                        <p class="card-text">Контрольные работы из видеоуроков</p>
+                    </div>
+                    <a href="tests.html" class="main__training-materials_button">Перейти</a>
+                </div>
+                <div class="main__training-materials_card">
+                    <a href="self-training.html"><img src="./assets/img/self-training_cover.png" class="card-img-top"
+                            alt="Самостоятельные работы"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Самостоятельные работы</h5>
+                        <p class="card-text">Задания для проверки знаний</p>
+                    </div>
+                    <a href="self-training.html" class="main__training-materials_button">Перейти</a>
+                </div>
+            </div>
+        </section>
 
+        </section>
         <section class="video-block" id="video">
             <h4 class="video-title">ВИДЕО</h4>
             <div class="video-container">
                 <div class="card">
-                    <a href="https://zen.yandex.ru/suite/2b80e197-36ae-4668-aff9-f34123ae0700"><img src="./assets/img/theory2.jpg" class="card-img-top" alt="Вся теория с примерами"></a>
+                    <img src="./assets/img/theory2.jpg" class="card-img-top" alt="Вся теория с примерами">
                     <div class="card-body">
                         <h5 class="card-title">Вся теория <br>с примерами</h5>
                         <p class="card-text">Видеоуроки с разбором теории по математике, алгебре и геометрии за 6-9
@@ -56,7 +122,7 @@
                         class="btn btn-primary btn-primary_sp">Перейти</a>
                 </div>
                 <div class="card">
-                    <a href="https://zen.yandex.ru/suite/f68955ab-16e9-40e7-b7f4-f864de1071e7"><img src="./assets/img/algebra7.jpg" class="card-img-top" alt="УРОКИ 7 класс АЛГЕБРА"></a>
+                    <img src="./assets/img/algebra7.jpg" class="card-img-top" alt="УРОКИ 7 класс АЛГЕБРА">
                     <div class="card-body">
                         <h5 class="card-title">УРОКИ 7 класс АЛГЕБРА</h5>
                         <p class="card-text">Все уроки по алгебре за курс 7 класс (по учебнику Мерзляка)</p>
@@ -65,7 +131,7 @@
                         class="btn btn-primary btn-primary_sp">Перейти</a>
                 </div>
                 <div class="card">
-                    <a href="https://zen.yandex.ru/suite/6bcf99d6-9dfe-4550-907d-eda4419f3a0f"><img src="./assets/img/geom7.jpg" class="card-img-top" alt="УРОКИ 7 класс ГЕОМЕТРИЯ"></a>
+                    <img src="./assets/img/geom7.jpg" class="card-img-top" alt="УРОКИ 7 класс ГЕОМЕТРИЯ">
                     <div class="card-body">
                         <h5 class="card-title">УРОКИ 7 класс ГЕОМЕТРИЯ</h5>
                         <p class="card-text">Все уроки по геометрии за курс 7 класса (по учебнику Мерзляка)</p>
@@ -74,7 +140,8 @@
                         class="btn btn-primary btn-primary_sp">Перейти</a>
                 </div>
                 <div class="card">
-                    <a href="https://www.youtube.com/playlist?list=PLyNXFylq37bUq2-nsa_3GWJfFupAgfQ60"><img src="./assets/img/algebra8.jpg" class="card-img-top" alt="УРОКИ 8 класс АЛГЕБРА"></a>
+                    <a href="https://www.youtube.com/playlist?list=PLyNXFylq37bUq2-nsa_3GWJfFupAgfQ60"><img
+                            src="./assets/img/algebra8.jpg" class="card-img-top" alt="УРОКИ 8 класс АЛГЕБРА"></a>
                     <div class="card-body">
                         <h5 class="card-title">УРОКИ 8 класс АЛГЕБРА</h5>
                         <p class="card-text">Все уроки по алгебре за курс 8 класса (по учебнику Мерзляка)</p>
@@ -83,7 +150,7 @@
                         class="btn btn-primary btn-primary_sp">Перейти</a>
                 </div>
                 <div class="card">
-                    <a href="https://zen.yandex.ru/suite/53194160-d912-4889-af13-3c297ba3cf3c"><img src="./assets/img/geom8.jpg" class="card-img-top" alt="УРОКИ 8 класс ГЕОМЕТРИЯ"></a>
+                    <img src="./assets/img/geom8.jpg" class="card-img-top" alt="УРОКИ 8 класс ГЕОМЕТРИЯ">
                     <div class="card-body">
                         <h5 class="card-title">УРОКИ 8 класс ГЕОМЕТРИЯ</h5>
                         <p class="card-text">Все уроки по геометрии за курс 8 класса (по учебнику Мерзляка)</p>
@@ -93,9 +160,9 @@
                 </div>
 
                 <div class="card card_test">
-                    <a href="https://zen.yandex.ru/suite/b77463aa-895b-456f-beae-3102dd7897fb"><img src="./assets/img/kr6.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 6 класс"></a>
+                    <img src="./assets/img/kr6.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 6 класс">
                     <div class="card-body card-body_test">
-                        <!--  <h5 class="card-title">КОНТРОЛЬНЫЕ <br>6 класс</h5> -->
+                        <h5 class="card-title">КОНТРОЛЬНЫЕ <br>6 класс</h5>
                         <p class="card-text">Разбор контрольных по математике за курс 6 класса (по учебнику
                             Мерзляка)
                         </p>
@@ -105,9 +172,9 @@
                 </div>
 
                 <div class="card card_test">
-                    <a href="https://zen.yandex.ru/suite/46ed326d-9e71-4eb5-a4f4-2c03691b6a30"><img src="./assets/img/kr7alg.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 7 класс АЛГЕБРА"></a>
+                    <img src="./assets/img/kr7alg.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 7 класс АЛГЕБРА">
                     <div class="card-body card-body_test">
-                        <!-- <h5 class="card-title">КОНТРОЛЬНЫЕ <br>7 класс АЛГЕБРА</h5> -->
+                        <h5 class="card-title">КОНТРОЛЬНЫЕ <br>7 класс АЛГЕБРА</h5>
                         <p class="card-text">Разбор контрольных по алгебре за курс 7 класса (по учебнику Мерзляка)
                         </p>
                     </div>
@@ -115,9 +182,9 @@
                         class="btn btn-primary btn-primary_sp">Перейти</a>
                 </div>
                 <div class="card card_test">
-                    <a href="https://zen.yandex.ru/suite/5f6485ba-e2ba-487d-9649-3a8bda33b2a4"><img src="./assets/img/kr7geom.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 7 класс ГЕОМЕТРИЯ"></a>
+                    <img src="./assets/img/kr7geom.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 7 класс ГЕОМЕТРИЯ">
                     <div class="card-body card-body_test">
-                        <!-- <h5 class="card-title">КОНТРОЛЬНЫЕ <br>7 класс ГЕОМЕТРИЯ</h5> -->
+                        <h5 class="card-title">КОНТРОЛЬНЫЕ <br>7 класс ГЕОМЕТРИЯ</h5>
                         <p class="card-text">Разбор контрольных по геометрии за курс 7 класса (по учебнику Мерзляка)</p>
                     </div>
                     <a href="https://zen.yandex.ru/suite/5f6485ba-e2ba-487d-9649-3a8bda33b2a4"
@@ -125,9 +192,9 @@
                 </div>
 
                 <div class="card card_test">
-                    <a href="https://zen.yandex.ru/suite/91c7574a-0584-4b6c-a46c-ebbe448565a3"><img src="./assets/img/kr8alg.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 8 класс АЛГЕБРА"></a>
+                    <img src="./assets/img/kr8alg.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 8 класс АЛГЕБРА">
                     <div class="card-body card-body_test">
-                        <!--  <h5 class="card-title">КОНТРОЛЬНЫЕ <br>8 класс АЛГЕБРА</h5> -->
+                        <h5 class="card-title">КОНТРОЛЬНЫЕ <br>8 класс АЛГЕБРА</h5>
                         <p class="card-text">Разбор контрольных по алгебре за курс 8 класса (по учебнику Мерзляка)
                         </p>
                     </div>
@@ -135,9 +202,9 @@
                         class="btn btn-primary btn-primary_sp">Перейти</a>
                 </div>
                 <div class="card card_test">
-                    <a href="https://zen.yandex.ru/suite/112cf1a7-b036-4e75-8197-f9cb66532cc7"><img src="./assets/img/kr8geom.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 8 класс ГЕОМЕТРИЯ"></a>
+                    <img src="./assets/img/kr8geom.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 8 класс ГЕОМЕТРИЯ">
                     <div class="card-body card-body_test">
-                        <!-- <h5 class="card-title">КОНТРОЛЬНЫЕ <br>8 класс ГЕОМЕТРИЯ</h5> -->
+                        <h5 class="card-title">КОНТРОЛЬНЫЕ <br>8 класс ГЕОМЕТРИЯ</h5>
                         <p class="card-text">Разбор контрольных по геометрии за курс 8 класса (по учебнику Мерзляка)</p>
                     </div>
                     <a href="https://zen.yandex.ru/suite/112cf1a7-b036-4e75-8197-f9cb66532cc7"
@@ -145,9 +212,10 @@
                 </div>
 
                 <div class="card card_test">
-                    <a href="https://zen.yandex.ru/suite/944af8fa-8c3c-47c6-81e9-ae8eda39b064"><img src="./assets/img/kr9alg.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 9 класс АЛГЕБРА"></a>
+                    <a href="https://www.youtube.com/playlist?list=PLyNXFylq37bXGGnctmc6OBX6eeNrIaoZi"><img
+                            src="./assets/img/kr9alg.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 9 класс АЛГЕБРА"></a>
                     <div class="card-body card-body_test">
-                        <!-- <h5 class="card-title">КОНТРОЛЬНЫЕ <br>9 класс АЛГЕБРА</h5> -->
+                        <h5 class="card-title">КОНТРОЛЬНЫЕ <br>9 класс АЛГЕБРА</h5>
                         <p class="card-text">Разбор контрольных по алгебре за курс 9 класса (по учебнику Мерзляка)
                         </p>
                     </div>
@@ -155,9 +223,10 @@
                         class="btn btn-primary btn-primary_sp">Перейти</a>
                 </div>
                 <div class="card card_test">
-                    <a href="https://zen.yandex.ru/suite/db3d2fc4-4320-4eeb-b28a-4f966134196d"><img src="./assets/img/kr9geom.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 9 класс ГЕОМЕТРИЯ"></a>
+                    <a href="https://www.youtube.com/playlist?list=PLyNXFylq37bVNwmj0Pvqyq2DTCjDiFoRo"><img
+                            src="./assets/img/kr9geom.png" class="card-img-top" alt="КОНТРОЛЬНЫЕ 9 класс ГЕОМЕТРИЯ"></a>
                     <div class="card-body card-body_test">
-                        <!--  <h5 class="card-title">КОНТРОЛЬНЫЕ <br>9 класс ГЕОМЕТРИЯ</h5> -->
+                        <h5 class="card-title">КОНТРОЛЬНЫЕ <br>9 класс ГЕОМЕТРИЯ</h5>
                         <p class="card-text">Разбор контрольных по геометрии за курс 9 класса (по учебнику Мерзляка)</p>
                     </div>
                     <a href="https://zen.yandex.ru/suite/db3d2fc4-4320-4eeb-b28a-4f966134196d"
@@ -166,7 +235,7 @@
                 <div class="card card_test">
                     <img src="./assets/img/vpr.jpg" class="card-img-top" alt="ВПР">
                     <div class="card-body">
-                        <h5 class="card-title card-title_exam">Всероссийская проверочная работа</h5>
+                        <h5 class="card-title">Всероссийская проверочная работа</h5>
                         <p class="card-text">Готовимся к ВПР</p>
                     </div>
                     <a href="https://zen.yandex.ru/suite/5a961a63-5b85-4c9b-b26a-b7199228c905"
@@ -174,13 +243,14 @@
                 </div>
                 <div class="card card_test">
                     <img src="./assets/img/oge.jpg" class="card-img-top" alt="ОГЭ">
-                    <div class="card-body">
-                        <h5 class="card-title card-title_exam">Основной государственный экзамен</h5>
+                    <div class="card-body card-body_oge">
+                        <h5 class="card-title">Основной государственный экзамен</h5>
                         <p class="card-text">Готовимся к ОГЭ</p>
                     </div>
                     <a href="https://zen.yandex.ru/suite/893860b7-a19a-4ca4-a096-048d3a582f29"
                         class="btn btn-primary btn-primary_sp">Перейти</a>
                 </div>
+            </div>
         </section>
 
         <section class="education-block">
@@ -191,7 +261,7 @@
                         class="edu-card__img">
                     <h5 class="edu-card__univers">Челябинский Государственный Педагогический Университет (ЮУрГГПУ)
                     </h5>
-                    <p class="edu-card__years">2006-2011 гг.</p>
+                    <p class="edu-card__years">2006-2011гг.</p>
                     <p class="edu-card__prof">Специальность «Математика с дополнительной специальностью менеджмент
                         организации»,
                         квалификация-учитель математики, менеджер.</p>
@@ -227,17 +297,21 @@
                 <div class="row gx-5">
                     <!--Grid column-->
                     <div class="col-lg-1 col-md-1 col-sm d-none d-lg-block text-start">
-                        <img src="/assets/img/footer_img/mail_pict.svg" alt="mail_img">
+                        <img src="./assets/img/footer_img/mail_pict.svg" alt="mail_img">
                     </div>
                     <!--Grid column-->
                     <div class="col-lg-5 col-md-11 mb-4 mb-md-0 text-start">
-                        <h5 class="footer__titile">Свяжитесь со мной</h5>
+                        <h5 class="footer__titile">Контакты</h5>
+
                         <p class="footer__content">
-                            Если у вас остались вопросы или хотите обсудить сотрудничество, пишите:<p
-                                class="footer-information__link"><a href="mailto:sampleemail@gmail.com"
-                                    class="footer-information__link">
+                            Если у вас остались вопросы или вы хотите обсудить сотрудничество,<a
+                                href="https://wapp.click/79085834381" target="_blank"
+                                class="footer__content footer__content-link">свяжитесь со мной &nbsp;<i
+                                    class="fa-brands fa-whatsapp"></i></a>
+                            <!-- <p class="footer-information__link"><a href="mailto:sampleemail@gmail.com"
+                                    class="footer-information__link" target="_blank">
                                     sample@google.com</a></p>
-                        </p>
+                        </p> -->
                     </div>
                     <!--Grid column-->
 
@@ -245,17 +319,17 @@
                     <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-start footer-items__link">
                         <ul class="list-unstyled mb-0 footer__menu">
                             <li>
-                                <a href="#!" class="footer__menu-link">Обо мне</a>
+                                <a href="about.html" class="footer__menu-link" target="_blank">Обо мне</a>
                             </li>
                             <li>
                                 <a href="#!" class="footer__menu-link">К уроку</a>
                             </li>
                             <li>
-                                <a href="#!" class="footer__menu-link">Видео</a>
+                                <a href="#video" class="footer__menu-link">Видео</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="#!" class="footer__menu-link">Напишите мне</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                     <!--Grid column-->
@@ -268,11 +342,12 @@
                             </div>
                             <div class="mt-auto">
                                 <div class="flex justify-content-around">
-                                    <a href="" class="me-4 text-reset social">
-                                        <img src="/assets/img/footer_img/telegram.png" alt="telegram">
+                                    <a href="https://www.youtube.com/channel/UCeFS2lfyOwbgVhkuRKadngw"
+                                        class="me-4 text-reset social">
+                                        <img src="./assets/img/footer_img/icon-youtube.png" alt="YouTube">
                                     </a>
-                                    <a href="" class="me-4 text-reset social">
-                                        <img src="/assets/img/footer_img/vkontakte.png" alt="vkontakte">
+                                    <a href="https://vk.com/club_math_in2" class="me-4 text-reset social">
+                                        <img src="./assets/img/footer_img/vkontakte.png" alt="vkontakte">
                                     </a>
                                 </div>
                             </div>
