@@ -109,7 +109,7 @@
     }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (min-width:321px) and (max-width:767px) {
     .main {
         &__banner {
             display: flex;
@@ -152,6 +152,55 @@
             width: 40%;
             margin: auto;
             padding: 1.5% 5%;
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    .main {
+        &__banner {
+            display: flex;
+            background-image: url(../img/photo_banner.png);
+            background-size: 99%;
+            background-repeat: no-repeat;
+        }
+
+        &__photo {
+            display: none;
+        }
+
+        &__text {
+            width: 100%;
+            margin-top: 70%;
+            padding: 4%;
+            border-radius: 15px;
+
+            text-align: center;
+
+            background-color: #E6E6FA95;
+        }
+
+        &__title {
+            font-size: 0.8rem;
+            
+            color: darken($text-color, $amount: 10%);
+
+            &_vivid {
+                color: darken($vivid-warm-color, $amount: 10%);
+            }
+        }
+
+        &__slogan {
+            font-size: 0.7rem;
+            color: darken($text-color, $amount: 10%);
+            margin-bottom: 3%;
+        }
+
+        &__about {
+            font-size: 0.7rem;
+            width: 100%;
+            margin: auto;
+            padding: 3% 5%;
         }
     }
 }
