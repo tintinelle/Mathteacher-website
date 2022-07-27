@@ -133,3 +133,20 @@
         }
     }
 }
+
+@media screen and (max-width: 424px) {
+
+    .education-title {
+        font-size: 1em;
+    }
+
+    .edu-card {
+        &__univers {
+            font-size: 0.7em;
+        }
+
+        &__years {
+            font-size: 0.7em;
+        }
+    }
+}
