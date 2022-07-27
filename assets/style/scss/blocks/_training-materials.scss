@@ -10,8 +10,7 @@
     margin-right: auto;
     background-image: url(../img/cube.png), url(../img/formula.png);
     background-repeat: no-repeat;
-    background-position: bottom left, top right;
-
+    background-position: bottom 7px left 5px, top right;
     background-color: rgba(236, 229, 229, 0.37);
     border: none;
     border-radius: 1em;
@@ -75,7 +74,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1300px) {
     .main__training-materials {
         max-width: 95%;
     }
