@@ -17,41 +17,28 @@
         <header class="header">
             <img class="header__logo" src="assets/img/logo.png" alt="Логотип математика в квадрате">
             <p class="header__title">Математика в квадрате</p>
-            <!-- <nav class="header__nav">
-                <a target="blanc" href="about.html" title="Обо мне">Обо мне</a>
-                <a href="#">К уроку</a>
-                <a href="#video">Видео</a>
-                <a href="#footer">Где меня найти</a>
-                <a href="https://wapp.click/79085834381" target="_blank">Напишите мне <i
-                        class="fa-brands fa-whatsapp"></i></a>
-            </nav> -->
-
+    
             <nav class="navbar navbar-collapse navbar-expand-md">
                 <div class="container-fluid">
-                    <button class="navbar-toggler float-xs-right" type="button" data-bs-toggle="offcanvas"
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                        aria-labelledby="offcanvasNavbarLabel">
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Меню</h5>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+                        <div class="offcanvas-header justify-content-end">
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body">
                             <ul class="navbar-nav nav">
                                 <li class="nav-item nav__item">
-                                    <a target="blanc" href="index.html" title="На главную">На главную</a>
+                                    <a href="index.html" title="На главную">На главную</a>
                                 </li>
                                 <li class="nav-item nav__item">
-                                    <a href="#">К уроку</a>
+                                    <a href="index.html#training-materials">К уроку</a>
                                 </li>
                                 <li class="nav-item nav__item">
-                                    <a href="#video">Видео</a>
-                                </li>
-                                <li class="nav-item nav__item">
-                                    <a href="#footer">Где меня найти</a>
+                                    <a href="index.html#video">Видео</a>
                                 </li>
                                 <li class="nav-item nav__item">
                                     <a href="https://wapp.click/79085834381" target="_blank">Напишите мне <i
@@ -62,8 +49,8 @@
                     </div>
                 </div>
             </nav>
-
-
+    
+    
         </header>
 
 
@@ -141,9 +128,9 @@
                         <!--Grid column-->
                         <div class="col-lg-5 col-md-11 mb-4 mb-md-0 text-start">
                             <h5 class="footer__titile">Контакты</h5>
-
+    
                             <p class="footer__content">
-                                Если у вас остались вопросы или вы хотите обсудить сотрудничество,<a
+                                Если у вас остались вопросы или вы хотите обсудить сотрудничество, <a
                                     href="https://wapp.click/79085834381" target="_blank"
                                     class="footer__content footer__content-link">свяжитесь со мной &nbsp;<i
                                         class="fa-brands fa-whatsapp"></i></a>
@@ -153,18 +140,18 @@
                             </p> -->
                         </div>
                         <!--Grid column-->
-
+    
                         <!--Grid column-->
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-start footer-items__link">
                             <ul class="list-unstyled mb-0 footer__menu">
                                 <li>
-                                    <a href="about.html" class="footer__menu-link" target="_blank">Обо мне</a>
+                                    <a href="index.html" class="footer__menu-link">На главную</a>
                                 </li>
                                 <li>
-                                    <a href="#!" class="footer__menu-link">К уроку</a>
+                                    <a href="index.html#training-materials" class="footer__menu-link">К уроку</a>
                                 </li>
                                 <li>
-                                    <a href="#video" class="footer__menu-link">Видео</a>
+                                    <a href="index.html#video" class="footer__menu-link">Видео</a>
                                 </li>
                                 <!-- <li>
                                     <a href="#!" class="footer__menu-link">Напишите мне</a>
@@ -172,7 +159,7 @@
                             </ul>
                         </div>
                         <!--Grid column-->
-
+    
                         <!--Grid column-->
                         <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-start">
                             <div class="footer__social d-flex align-items-center flex-column" style="height: 120px">
@@ -180,12 +167,19 @@
                                     <p class="footer__content">Следите за мной в соц. сетях</p>
                                 </div>
                                 <div class="mt-auto">
-                                    <div class="flex justify-content-around">
-                                        <a href="" class="me-4 text-reset social">
-                                            <img src="./assets/img/footer_img/telegram.png" alt="telegram">
+                                    <div class="text-center">
+                                        <a href="https://www.youtube.com/channel/UCeFS2lfyOwbgVhkuRKadngw"
+                                            class="me-4 text-reset social" target="blank">
+                                            <img src="./assets/img/footer_img/icon-youtube.png" alt="YouTube">
                                         </a>
-                                        <a href="" class="me-4 text-reset social">
+                                        <a href="https://vk.com/club_math_in2" class="me-4 text-reset social"
+                                            target="blank">
                                             <img src="./assets/img/footer_img/vkontakte.png" alt="vkontakte">
+                                        </a>
+                                        <a href="https://zen.yandex.ru/suite/2b80e197-36ae-4668-aff9-f34123ae0700"
+                                            class="me-4 text-reset social" target="blank">
+                                            <img src="./assets/img/footer_img/icons8-yandex-zen.svg" alt="Yandexdzen"
+                                                class="footer__content_dzen">
                                         </a>
                                     </div>
                                 </div>
@@ -196,7 +190,7 @@
                     <!--Grid row-->
                 </div>
                 <!-- Grid container -->
-
+    
                 <!-- Copyright -->
                 <div class="text-center p-4">
                     © 2022 Все права защищены.

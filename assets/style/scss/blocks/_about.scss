@@ -40,7 +40,8 @@
     grid-area: "photo_content";
     grid-template-columns: repeat(6, 1fr);
     max-height: 500px;
-    margin: 10% 5%;
+    margin-top: 10%;
+    margin-bottom: 5%;
     grid-column-gap: 20px;
     justify-items: center;
     align-items: center;
@@ -49,6 +50,7 @@
 
     &_1 {
         grid-area: "about__photo_1";
+        margin-left: 20px;
 
         &:hover {
             transform: scale(1.2);
@@ -90,6 +92,7 @@
 
     &_6 {
         grid-area: "about__photo_6";
+    
 
         &:hover {
             transform: scale(1.2);
