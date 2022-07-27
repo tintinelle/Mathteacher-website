@@ -8,27 +8,29 @@
     padding-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #FFF;
-    border: none;
-    border-radius: 1em;
-    box-shadow: 4px 4px 16px rgb(78 55 55 / 37%), inset 0px 4px 16px rgb(255 255 255 / 50%);
+    background-image:url(../img/cube.png), url(../img/formula.png);
+    background-repeat: no-repeat;
+    background-position: bottom left, top right;
 }
 
 .main__training-materials_container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .main__training-materials_title {
     padding: 2%;
     text-align: center;
+    font-family: $title-font;
+    font-size: 2em;
+    font-weight: 500;
 }
 
 .main__training-materials_card {
     max-width: 200px;
     min-width: 100px;
-    min-height: 250px;
     margin: 0.7rem;
     text-align: center;
 
@@ -60,6 +62,53 @@
     box-shadow: 0 0 0 0.25rem rgba(rgb(49,132,253), .5);
 }
 
+// адаптив "К уроку"
+@media screen and (max-width: 1023px) {
+    .main__training-materials{
+    background-image: url(../img/formula_small.svg), url(../img/formula_green.svg);
+    background-position: center right 5px, center left 5px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .main__training-materials {
+        max-width: 95%;
+    }
+
+    .main__training-materials_title {
+        margin: 1rem auto;
+        font-size: 1.5em;
+    }
+
+    .main__training-materials_card {
+        min-height: 150px;
+        margin: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main__training-materials {
+        max-width: 100%;
+    }
+
+    .main__training-materials_title {
+        margin: 1rem auto;
+        font-size: 1.5em;
+    }
+
+    .main__training-materials_card {
+        max-width: 150px;
+        margin: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 369px) {
+    .main__training-materials_container{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 // страницы "Презентации", "Самостоятельные работы" и "Контрольные работы"
 .self-training, .tests, .presentations {
     color: $text-color;
@@ -83,15 +132,30 @@
     width: 350px;
 }
 
-// .training-material__subtitle {
-
-// }
-
 .training-material__link {
     text-decoration: none;
     color: $pastel-warm-color;
+    display: flex;
+    flex-direction: column;
 }
 
-.training-material__link:hover{
+.training-material__link:hover {
     color: $pastel-cold-color;
+}
+
+.training-material__link:visited {
+    color: $vivid-cold-color;
+}
+
+// адаптив страниц
+
+@media screen and (max-width: 767px){
+    .links__container {
+        grid-template-columns: 1fr;
+        justify-items: left;
+    }
+
+    .nth-grade__category {
+        width: auto;
+    }
 }
