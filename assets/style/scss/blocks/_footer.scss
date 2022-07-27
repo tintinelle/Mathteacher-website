@@ -13,6 +13,10 @@ $bgFooter: #394C7D;
         color: $footer-information__link_hover;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     .footer__menu-link {
         color: $footer__menu-link;
     }

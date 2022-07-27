@@ -719,6 +719,9 @@
 .footer a:hover {
   color: rgb(147, 144, 144);
 }
+.footer a {
+  text-decoration: none;
+}
 .footer .footer__menu-link {
   color: rgb(234, 239, 242);
 }
