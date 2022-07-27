@@ -1,10 +1,15 @@
 # Математика в квадрате (Math in Square)
 
-Web-page for a modern math teacher
+Website for a modern math teacher
 
 ## Description
 
-This project is a site for the opportunity to see the work of a repair company, leave a request for repair work on the site.
+This project is a website for the modern math teacher with educational content for the pupils of 6-9 grades.
+At the first page we meet the teacher and find out what is her work about. 
+For more information about the person, user can go to the page 'About' clicking on the button 'Обо мне' or using navigaton menu in a header.
+Main blocks consist cards with a short description of content. 
+Block 'К уроку (For the lesson)' is a navigation to the pages where user can find tests and presentations describing different concepts from math, algebra and geometry.
+Cards in the block 'Video (Видео)' lead to the pages of a third party site, where user can find video-lessons and video-solutions of the tests
 
 
 ## Technology stack
@@ -17,10 +22,12 @@ This project is a site for the opportunity to see the work of a repair company, 
 ## Result
 
 [Сlick me](https://mz-87.github.io/mathteacher-site/)
-<p><img src="assets/img/" alt="result"/>
-<img src="assets/img/forReadme1.jpg" alt="result"/>
-<img src="assets/img/forReadme1.jpg" alt="result"/>
-<img src="assets/img/forReadme1.jpg" alt="result"/>
+<p> 
+<img src="assets/img/readMe/banner.png" alt="banner"/>
+<img src="assets/img/readMe/main_blocks.png" alt="main blocks"/>
+<img src="assets/img/readMe/about.png" alt="about page banner"/>
+<img src="assets/img/readMe/about2.png" alt="about page photos"/>
+<img src="assets/img/readMe/work.png" alt="test's page"/>
 </p>
 
 
