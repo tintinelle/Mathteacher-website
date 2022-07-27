@@ -1073,8 +1073,8 @@
 }
 
 .about__certificate_1:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
 }
 
 .about__certificate_2 {
@@ -1082,8 +1082,8 @@
 }
 
 .about__certificate_2:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
 }
 
 .about__certificate_3 {
@@ -1091,8 +1091,8 @@
 }
 
 .about__certificate_3:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
 }
 
 .about__certificate_4 {
@@ -1100,8 +1100,8 @@
 }
 
 .about__certificate_4:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
 }
 
 .about__certificate_5 {
@@ -1109,8 +1109,8 @@
 }
 
 .about__certificate_5:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
 }
 
 .about__certificate_6 {
@@ -1118,8 +1118,8 @@
 }
 
 .about__certificate_6:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(2.5);
+          transform: scale(2.5);
 }
 
 .about__certificate_1, .about__certificate_2, .about__certificate_3, .about__certificate_4, .about__certificate_5, .about__certificate_6 {
