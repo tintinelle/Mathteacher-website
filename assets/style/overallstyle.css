@@ -1119,6 +1119,20 @@
 .about__certificate {
     overflow-x: scroll;
   }
+  .about__photo::-webkit-scrollbar,
+  .about__certificate::-webkit-scrollbar {
+    display: none;
+  }
+  .about__photo_1:hover, .about__photo_2:hover, .about__photo_3:hover, .about__photo_4:hover, .about__photo_5:hover, .about__photo_6:hover,
+  .about__certificate_1:hover,
+  .about__certificate_2:hover,
+  .about__certificate_3:hover,
+  .about__certificate_4:hover,
+  .about__certificate_5:hover,
+  .about__certificate_6:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 @media screen and (max-width: 767px) {
   .about__container {
@@ -1139,6 +1153,20 @@
   .about__photo,
 .about__certificate {
     overflow-x: scroll;
+  }
+  .about__photo::-webkit-scrollbar,
+  .about__certificate::-webkit-scrollbar {
+    display: none;
+  }
+  .about__photo_1:hover, .about__photo_2:hover, .about__photo_3:hover, .about__photo_4:hover, .about__photo_5:hover, .about__photo_6:hover,
+  .about__certificate_1:hover,
+  .about__certificate_2:hover,
+  .about__certificate_3:hover,
+  .about__certificate_4:hover,
+  .about__certificate_5:hover,
+  .about__certificate_6:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 .main__training-materials {

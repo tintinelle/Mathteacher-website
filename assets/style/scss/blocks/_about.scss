@@ -205,7 +205,22 @@
     .about__photo,
     .about__certificate {
         overflow-x: scroll;
+    
+
+    &::-webkit-scrollbar {
+        display: none;
     }
+&_1,
+&_2,
+&_3,
+&_4,
+&_5,
+&_6 {
+    &:hover {
+        transform: scale(1);
+    }
+}
+}
 }
 
 @media screen and (max-width: 767px) {
@@ -227,6 +242,19 @@
     .about__photo,
     .about__certificate {
         overflow-x: scroll;
+       
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    &_1,
+    &_2,
+    &_3,
+    &_4,
+    &_5,
+    &_6 {
+        &:hover {
+            transform: scale(1);
+        }
     }
-
+}
 }
