@@ -21,7 +21,7 @@ Cards in the block 'Video (Видео)' lead to the pages of a third party site,
 
 ## Result
 
-[Сlick me](https://mz-87.github.io/mathteacher-site/)
+[Сlick me](https://tintinelle.github.io/Mathteacher-website/)
 <p> 
 <img src="assets/img/readMe/banner.png" alt="banner"/>
 <img src="assets/img/readMe/main-blocks.png" alt="main blocks"/>
